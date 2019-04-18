@@ -30,7 +30,19 @@ module.exports = {
     `gatsby-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-source-wordpress`,
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: process.env.SOURCE_SITE,
+        protocol: 'https',
+        hostingWPCOM: false,
+        useACF: false,
+        searchAndReplaceContentUrls: {
+          sourceUrl: 'https://' + process.env.SOURCE_SITE,
+          replacementUrl: 'https://nfmohit.pro',
+        }
+      },
+    },    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

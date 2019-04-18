@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "nfmohit-pro",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "NPM package for the nfmohit.pro Gatsby site",
+  "version": "1.0.0",
+  "author": "Nahid Ferdous Mohit <hello@nfmohit.pro>",
   "dependencies": {
     "gatsby": "^2.3.16",
     "gatsby-image": "^2.0.37",
@@ -22,7 +22,10 @@
     "prettier": "^1.17.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "personal",
+    "blog",
+    "wordpress"
   ],
   "license": "MIT",
   "scripts": {
@@ -35,9 +38,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/nfmohit-wpmudev/nfmohit.pro"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/nfmohit-wpmudev/nfmohit.pro/issues"
   }
 }

@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Nahid Ferdous Mohit <hello@nfmohit.pro>",
   "dependencies": {
+    "dotenv": "^7.0.0",
     "gatsby": "^2.3.16",
     "gatsby-image": "^2.0.39",
     "gatsby-plugin-manifest": "^2.0.28",

@@ -32,10 +32,12 @@ exports.createPages = ( {
 					edges {
 						node {
 							id
-							slug
-							status
-							template
-							format
+					        slug
+					        title
+					        content
+					        excerpt
+					        date
+					        modified
 						}
 					}
 				}
@@ -54,6 +56,48 @@ exports.createPages = ( {
 
 				createPage( {
 					path: `/blog/${ edge.node.slug }`,
+					component: slash( postTemplate ),
+					context: {
+						id: edge.node.id,
+					},
+				} );
+			} );
+			resolve();
+		} );
+
+		/* Pages ( WordPress Native ) */
+		graphql(
+			`
+			{
+				allWordpressPage {
+					edges {
+						node {
+							id
+					        title
+					        content
+					        excerpt
+					        date
+					        modified
+					        slug
+					        status
+						}
+					}
+				}
+			}
+			`,
+
+		).then( ( result ) => {
+
+			if ( result.errors ) {
+				console.log( result.errors );
+				reject( result.errors );
+			}
+			const postTemplate = path.resolve('./src/templates/page.js');
+
+			_.each( result.data.allWordpressPage.edges, ( edge ) => {
+
+				createPage( {
+					path: edge.node.slug,
 					component: slash( postTemplate ),
 					context: {
 						id: edge.node.id,

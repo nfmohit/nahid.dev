@@ -45,7 +45,10 @@ const Layout = ( { children } ) => (
 					<footer>
 						© {new Date().getFullYear()}, Built with
 						{` `}
-						<a href="https://www.gatsbyjs.org">Gatsby</a>
+						<a href="https://www.gatsbyjs.org">Gatsby</a>,
+						Proudly powered by
+						{` `}
+						<a href="https://wordpress.org">WordPress</a>
 					</footer>
 				</div>
 			</>

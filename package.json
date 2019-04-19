@@ -1,48 +1,48 @@
 {
-  "name": "nfmohit-pro",
-  "private": true,
-  "description": "NPM package for the nfmohit.pro Gatsby site",
-  "version": "1.0.0",
-  "author": "Nahid Ferdous Mohit <hello@nfmohit.pro>",
-  "dependencies": {
-    "dotenv": "^7.0.0",
-    "gatsby": "^2.3.16",
-    "gatsby-image": "^2.0.39",
-    "gatsby-plugin-manifest": "^2.0.28",
-    "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sharp": "^2.0.35",
-    "gatsby-source-filesystem": "^2.0.29",
-    "gatsby-source-wordpress": "^3.0.54",
-    "gatsby-transformer-sharp": "^2.1.18",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0"
-  },
-  "devDependencies": {
-    "prettier": "^1.17.0"
-  },
-  "keywords": [
-    "gatsby",
-    "personal",
-    "blog",
-    "wordpress"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nfmohit-wpmudev/nfmohit.pro"
-  },
-  "bugs": {
-    "url": "https://github.com/nfmohit-wpmudev/nfmohit.pro/issues"
-  }
+    "name": "nfmohit-pro",
+    "private": true,
+    "description": "NPM package for the nfmohit.pro Gatsby site",
+    "version": "1.0.0",
+    "author": "Nahid Ferdous Mohit <hello@nfmohit.pro>",
+    "dependencies": {
+        "dotenv": "^7.0.0",
+        "gatsby": "^2.3.16",
+        "gatsby-image": "^2.0.39",
+        "gatsby-plugin-manifest": "^2.0.28",
+        "gatsby-plugin-offline": "^2.0.25",
+        "gatsby-plugin-react-helmet": "^3.0.12",
+        "gatsby-plugin-sharp": "^2.0.35",
+        "gatsby-source-filesystem": "^2.0.29",
+        "gatsby-source-wordpress": "^3.0.54",
+        "gatsby-transformer-sharp": "^2.1.18",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-helmet": "^5.2.0"
+    },
+    "devDependencies": {
+        "prettier": "^1.17.0"
+    },
+    "keywords": [
+        "gatsby",
+        "personal",
+        "blog",
+        "wordpress"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "format": "prettier --write src/**/*.{js,jsx}",
+        "start": "npm run develop",
+        "serve": "gatsby serve",
+        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nfmohit-wpmudev/nfmohit.pro"
+    },
+    "bugs": {
+        "url": "https://github.com/nfmohit-wpmudev/nfmohit.pro/issues"
+    }
 }

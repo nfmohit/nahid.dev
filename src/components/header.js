@@ -10,7 +10,7 @@ const Header = ( { siteTitle } ) => (
     <header>
         <nav
             id="primary-nav"
-            className="navbar navbar-light navbar-expand-lg">
+            className="navbar navbar-dark navbar-expand-lg">
 
             <div
                 className="container">
@@ -19,7 +19,7 @@ const Header = ( { siteTitle } ) => (
                     to="/"
                     className="navbar-brand"
                 >
-                    { siteTitle }
+                    &lt;/&gt; nfmohit
                 </Link>
 
                 <button
@@ -29,7 +29,7 @@ const Header = ( { siteTitle } ) => (
                     data-target="#mobileNavCollapse"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
-                        <span class="mdi"></span>
+                        <span className="mdi"></span>
                 </button>
 
                 <div
@@ -43,7 +43,16 @@ const Header = ( { siteTitle } ) => (
                                             to="/"
                                             className="nav-link"
                                         >
-                                            Home
+                                            &lt;Home&gt;
+                                        </Link>
+                                </li>
+                                <li
+                                    className="nav-item">
+                                        <Link
+                                            to="/"
+                                            className="nav-link"
+                                        >
+                                            &lt;Projects&gt;
                                         </Link>
                                 </li>
                                 <li
@@ -52,7 +61,7 @@ const Header = ( { siteTitle } ) => (
                                             to="/blog"
                                             className="nav-link"
                                         >
-                                            Blog
+                                            &lt;Blog&gt;
                                         </Link>
                                 </li>
                         </ul>

@@ -1,0 +1,21 @@
+/**
+ * Colors SCSS
+ */
+
+body {
+	background-color: $bg-dark;
+	color: $font-color-light;
+}
+
+header {
+	background-color: $primary-color;
+}
+
+a {
+	color: $primary-color;
+
+	&:hover,
+	&:focus {
+		color: $font-color-light;
+	}
+}

@@ -1,0 +1,17 @@
+/**
+ * Typography SCSS
+ */
+
+body {
+	font-family: $primary-font;
+}
+
+.navbar-brand {
+    letter-spacing: -2px;
+    text-transform: lowercase;
+}
+
+header,
+footer {
+	text-transform: lowercase;
+}

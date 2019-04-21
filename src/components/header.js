@@ -7,31 +7,60 @@ import React from "react"
 
 const Header = ( { siteTitle } ) => (
 
-    <header
-        style={ {
-            background: `rebeccapurple`,
-            marginBottom: `1.45rem`,
-        } }
-    >
-        <div
-            style={ {
-                margin: `0 auto`,
-                maxWidth: 960,
-                padding: `1.45rem 1.0875rem`,
-            } }
-        >
-            <h1 style={ { margin: 0 } }>
+    <header>
+        <nav
+            id="primary-nav"
+            className="navbar navbar-light navbar-expand-lg">
+
+            <div
+                className="container">
+
                 <Link
-                to="/"
-                style={ {
-                    color: `white`,
-                    textDecoration: `none`,
-                } }
+                    to="/"
+                    className="navbar-brand"
                 >
                     { siteTitle }
                 </Link>
-            </h1>
-        </div>
+
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#mobileNavCollapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                        <span class="mdi"></span>
+                </button>
+
+                <div
+                    className="collapse navbar-collapse"
+                    id="mobileNavCollapse">
+                        <ul
+                            className="navbar-nav ml-auto text-center">
+                                <li
+                                    className="nav-item active">
+                                        <Link
+                                            to="/"
+                                            className="nav-link"
+                                        >
+                                            Home
+                                        </Link>
+                                </li>
+                                <li
+                                    className="nav-item">
+                                        <Link
+                                            to="/blog"
+                                            className="nav-link"
+                                        >
+                                            Blog
+                                        </Link>
+                                </li>
+                        </ul>
+                </div>
+
+            </div>
+
+        </nav>
     </header>
 )
 

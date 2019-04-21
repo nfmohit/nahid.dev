@@ -2,26 +2,25 @@
 * Internal dependencies
 */
 import React from "react"
-import { Link } from "gatsby"
 
 /**
  * Project dependencies
  */
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
 
 	<Layout>
 		<SEO title="Home" keywords={ [ `gatsby`, `application`, `react` ] } />
-		<h1>Hi people</h1>
-		<p>Welcome to your new Gatsby site.</p>
-		<p>Now go build something great.</p>
-		<div style={ { maxWidth: `300px`, marginBottom: `1.45rem` } }>
-			<Image />
-		</div>
-		<Link to="/sample-page/">Go to page 2</Link>
+
+		<section id="intro">
+
+			<p>Hi, my name is</p>
+			<h1>Nahid Ferdous Mohit</h1>
+			<p>I am a web interface developer, WordPress sorcerer, a proud WPMUDEVian, WordPress contributor, foss enthusiast.</p>
+
+		</section>
 	</Layout>
 
 )

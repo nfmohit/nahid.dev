@@ -19,7 +19,7 @@ const Header = ( { siteTitle } ) => (
                     to="/"
                     className="navbar-brand"
                 >
-                    &lt;/&gt; nfmohit
+                    &lt; nfmohit /&gt;
                 </Link>
 
                 <button

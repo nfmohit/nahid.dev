@@ -2,6 +2,7 @@
 * Internal dependencies
 */
 import React from "react"
+import Helmet from 'react-helmet';
 
 /**
  * Project dependencies
@@ -12,6 +13,13 @@ import SEO from "../components/seo"
 const IndexPage = () => (
 
 	<Layout>
+
+		<Helmet
+			bodyAttributes={{
+		        class: 'home'
+		    }}
+		/>
+
 		<SEO title="Home" keywords={ [ `gatsby`, `application`, `react` ] } />
 
 		<section id="intro">

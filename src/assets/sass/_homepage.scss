@@ -1,3 +1,11 @@
 /**
  * Homepage SCSS File
  */
+
+/* Center the homepage content */
+
+body.home main {
+	height: calc(100vh - 81px);
+    display: flex;
+    align-items: center;
+}

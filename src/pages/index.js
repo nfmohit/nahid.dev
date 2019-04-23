@@ -26,7 +26,13 @@ const IndexPage = () => (
 
 			<p>Hi, my name is</p>
 			<h1>Nahid Ferdous Mohit</h1>
-			<p>I am a web interface developer, WordPress sorcerer, a proud WPMUDEVian, WordPress contributor, foss enthusiast.</p>
+			<ol start="0">
+				<li>web interface developer</li>
+				<li>WordPress sorcerer</li>
+				<li>a proud WPMUDEVian</li>
+				<li>WordPress contributor</li>
+				<li>foss enthusiast</li>
+			</ol>
 
 		</section>
 	</Layout>

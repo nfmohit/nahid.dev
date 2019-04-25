@@ -46,7 +46,7 @@ module.exports = {
 				useACF: false,
 				searchAndReplaceContentUrls: {
 					sourceUrl: 'https://' + process.env.SOURCE_SITE,
-					replacementUrl: 'https://nfmohit.pro',
+					replacementUrl: 'https://nahid.dev',
 				},
 				includedRoutes: [
 					"**/categories",

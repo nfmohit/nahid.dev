@@ -1,9 +1,9 @@
 {
-    "name": "nfmohit-pro",
+    "name": "nahid-dev",
     "private": true,
-    "description": "NPM package for the nfmohit.pro Gatsby site",
+    "description": "NPM package for the nahid.dev Gatsby site",
     "version": "1.0.0",
-    "author": "Nahid Ferdous Mohit <hello@nfmohit.pro>",
+    "author": "Nahid Ferdous Mohit <hello@nahid.dev>",
     "dependencies": {
         "bootstrap": "^4.3.1",
         "dotenv": "^7.0.0",
@@ -45,9 +45,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/nfmohit-wpmudev/nfmohit.pro"
+        "url": "https://github.com/nfmohit-wpmudev/nahid.dev"
     },
     "bugs": {
-        "url": "https://github.com/nfmohit-wpmudev/nfmohit.pro/issues"
+        "url": "https://github.com/nfmohit-wpmudev/nahid.dev/issues"
     }
 }

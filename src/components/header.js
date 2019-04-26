@@ -49,7 +49,16 @@ const Header = ( { siteTitle } ) => (
                                 <li
                                     className="nav-item">
                                         <Link
-                                            to="/"
+                                            to="/about"
+                                            className="nav-link"
+                                        >
+                                            &lt;About&gt;
+                                        </Link>
+                                </li>
+                                <li
+                                    className="nav-item">
+                                        <Link
+                                            to="#"
                                             className="nav-link"
                                         >
                                             &lt;Projects&gt;

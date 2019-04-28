@@ -3,6 +3,7 @@
 */
 import React from "react"
 import Helmet from 'react-helmet';
+import { Link } from "gatsby"
 
 /**
  * Project dependencies
@@ -24,15 +25,23 @@ const IndexPage = () => (
 
 		<section id="intro">
 
-			<p>Hi, my name is</p>
-			<h1>Nahid Ferdous Mohit</h1>
-			<ol start="0">
-				<li>web interface developer</li>
-				<li>WordPress sorcerer</li>
-				<li>a proud WPMUDEVian</li>
-				<li>WordPress contributor</li>
-				<li>foss enthusiast</li>
-			</ol>
+			<div className="name">
+				<p>Hi, my name is</p>
+				<h1>Nahid Ferdous Mohit</h1>
+			</div>
+			<div className="tldr">
+				<span>$tl_dr <span className="equals">=</span> {'{'}</span>
+				<ul>
+					<li>[<span className="key">0</span>] <span className="equals">=></span> <span className="value">'software developer'</span>,</li>
+					<li>[<span className="key">1</span>] <span className="equals">=></span> <span className="value">'WordPress sorcerer'</span>,</li>
+					<li>[<span className="key">2</span>] <span className="equals">=></span> <span className="value">'a proud WPMUDEVian'</span>,</li>
+					<li>[<span className="key">3</span>] <span className="equals">=></span> <span className="value">'WordPress contributor'</span>,</li>
+					<li>[<span className="key">4</span>] <span className="equals">=></span> <span className="value">'foss enthusiast'</span>,</li>
+				</ul>
+				<span>}</span>
+			</div>
+
+    		<Link to="/about" className="btn btn-primary">More about me</Link>
 
 		</section>
 	</Layout>

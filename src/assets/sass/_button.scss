@@ -1,0 +1,15 @@
+/**
+ * Button CSS
+ */
+
+.btn {
+
+	&.btn-primary {
+		background-color: transparent;
+
+		&:hover,
+		&:focus {
+			background-color: $primary-color;
+		}
+	}
+}

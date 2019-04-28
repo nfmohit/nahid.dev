@@ -5,11 +5,28 @@
 /* Center the homepage content */
 
 body.home main {
-	height: calc(100vh - 110px);
     display: flex;
     align-items: center;
+
+    @media only screen and ( min-height: 431px ) {
+		height: calc(100vh - 110px);
+    }
 }
 
-body.home ol {
-	margin-left: 28px;
+body.home .name {
+	margin-bottom: 30px;
+
+	p {
+		margin-bottom: 10px;
+	}
+}
+
+body.home .tldr {
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+
+body.home .tldr ul {
+	list-style: none;
+	margin-left: 30px;
 }

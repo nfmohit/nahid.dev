@@ -1,0 +1,26 @@
+/**
+ * About Page CSS
+ */
+
+body.about {
+
+	.avatar img {
+		border-radius: 50%;
+	}
+
+	.vcard {
+		margin: 50px 0;
+		padding: 50px 0;
+
+		> .row {
+			align-items: center;	
+		}
+
+		.info {
+
+			span {
+				color: #b0b0b0;
+			}
+		}
+	}
+}

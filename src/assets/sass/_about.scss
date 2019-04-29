@@ -10,7 +10,8 @@ body.about {
 
 	.vcard {
 		margin: 50px 0;
-		padding: 50px 0;
+		padding: 50px 50px;
+		border: 1px solid $primary-color;
 
 		> .row {
 			align-items: center;	

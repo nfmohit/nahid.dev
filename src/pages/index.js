@@ -37,6 +37,9 @@ const IndexPage = () => (
 					<li>[<span className="key">2</span>] <span className="equals">=></span> <span className="value">'a proud WPMUDEVian'</span>,</li>
 					<li>[<span className="key">3</span>] <span className="equals">=></span> <span className="value">'WordPress contributor'</span>,</li>
 					<li>[<span className="key">4</span>] <span className="equals">=></span> <span className="value">'foss enthusiast'</span>,</li>
+					<li>[<span className="key">5</span>] <span className="equals">=></span> <span className="value">'javascript evangelist'</span>,</li>
+					<li>[<span className="key">6</span>] <span className="equals">=></span> <span className="value">'react fanatic'</span>,</li>
+					<li>[<span className="key">7</span>] <span className="equals">=></span> <span className="value">'php warrior'</span>,</li>
 				</ul>
 				<span>}</span>
 			</div>

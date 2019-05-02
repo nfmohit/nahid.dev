@@ -38,10 +38,11 @@ const Header = ( { siteTitle } ) => (
                         <ul
                             className="navbar-nav ml-auto text-center">
                                 <li
-                                    className="nav-item active">
+                                    className="nav-item">
                                         <Link
                                             to="/"
                                             className="nav-link"
+                                            activeClassName="active"
                                         >
                                             &lt;Home&gt;
                                         </Link>
@@ -51,6 +52,7 @@ const Header = ( { siteTitle } ) => (
                                         <Link
                                             to="/about"
                                             className="nav-link"
+                                            activeClassName="active"
                                         >
                                             &lt;About&gt;
                                         </Link>
@@ -60,6 +62,7 @@ const Header = ( { siteTitle } ) => (
                                         <Link
                                             to="#"
                                             className="nav-link"
+                                            activeClassName="active"
                                         >
                                             &lt;Projects&gt;
                                         </Link>
@@ -69,6 +72,7 @@ const Header = ( { siteTitle } ) => (
                                         <Link
                                             to="/blog"
                                             className="nav-link"
+                                            activeClassName="active"
                                         >
                                             &lt;Blog&gt;
                                         </Link>

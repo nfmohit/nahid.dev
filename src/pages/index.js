@@ -26,7 +26,7 @@ const IndexPage = () => (
 		<section id="intro">
 
 			<div className="name">
-				<p>Hi, my name is</p>
+				<p>{'//'} Hi, my name is</p>
 				<h1>Nahid Ferdous Mohit</h1>
 			</div>
 			<div className="tldr">

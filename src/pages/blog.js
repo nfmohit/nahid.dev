@@ -48,7 +48,6 @@ const Blog = () => (
 
 		render={ data => (
 			<Layout>
-				<Link to="/">Go Back</Link>
 				<div className="container">
 					<div className="row">
 						<div className="col col-xs-12">

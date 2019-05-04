@@ -15,7 +15,7 @@ import SEO from "../components/seo"
  */
 import avatar from "./../images/avatar.jpg"
 
-const IndexPage = () => (
+const AboutPage = () => (
 
 	<Layout>
 
@@ -80,4 +80,4 @@ const IndexPage = () => (
 
 )
 
-export default IndexPage;
+export default AboutPage;

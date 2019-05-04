@@ -64,7 +64,7 @@ const IndexPage = () => (
 					<span>education</span>
 					<p>high school (2017) <sup>*</sup>dropout<sup>*</sup></p>
 					<span>work</span>
-					<p>tech support engineer @ <a href="https://premium.wpmudev.org" target="_blank" rel="noopener noreferrer">WPMU DEV</a></p>
+					<p>tech support engineer @ <a href="https://premium.wpmudev.org" target="_blank" rel="noopener noreferrer" className="inline-link">WPMU DEV</a></p>
 					<span>location</span>
 					<p>Dhaka, Bangladesh</p>
 				</div>

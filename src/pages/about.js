@@ -71,6 +71,11 @@ const IndexPage = () => (
 			</div>
 		</div>
 
+		<div className="biography">
+			<h3>Biography</h3>
+			<p>Nahid is a 20 years old software developer located in Dhaka, Bangladesh.</p>
+		</div>
+
 	</Layout>
 
 )

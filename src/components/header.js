@@ -60,7 +60,7 @@ const Header = ( { siteTitle } ) => (
                                 <li
                                     className="nav-item">
                                         <Link
-                                            to="#"
+                                            to="/projects"
                                             className="nav-link"
                                             activeClassName="active"
                                         >

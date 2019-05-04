@@ -9,12 +9,16 @@ const Footer = () => (
 		<div className="container">
 			<div className="row">
 				<div className="col-md-8">
-					© {new Date().getFullYear()}, Built with
+					© {new Date().getFullYear()} Nahid Ferdous Mohit. <br/>
+					Built with
 					{` `}
-					<a href="https://www.gatsbyjs.org">Gatsby</a>,
-					Proudly powered by
+					<a href="https://www.gatsbyjs.org" className="inline-link">Gatsby</a>,
+					proudly powered by
 					{` `}
-					<a href="https://wordpress.org">WordPress</a>
+					<a href="https://wordpress.org" className="inline-link">WordPress</a>,
+					hosted in
+					{` `}
+					<a href="https://www.netlify.com/" className="inline-link">Netlify</a>.
 				</div>
 				<div className="col-md-4 social-links">
 					<a href="https://github.com/nfmohit-wpmudev" target="_blank" rel="noopener noreferrer">

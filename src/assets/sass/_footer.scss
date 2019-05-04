@@ -10,7 +10,9 @@ footer {
 	}
 
 	.social-links {
-		text-align: right;
+		display: flex;
+    	justify-content: flex-end;
+    	align-items: center;
 
 		a {
 			font-size: 16px;

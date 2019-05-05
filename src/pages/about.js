@@ -72,8 +72,9 @@ const AboutPage = () => (
 		</div>
 
 		<div className="biography">
-			<h3>Biography</h3>
-			<p>Nahid is a 20 years old software developer located in Dhaka, Bangladesh.</p>
+			<h2>About Nahid</h2>
+			<p>Nahid is a 20 years old software developer located in Dhaka, Bangladesh. He is currently working as a tech support engineer at <a href="https://premium.wpmudev.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WPMU DEV</a>, one of the leading WordPress development companies.
+			</p>
 		</div>
 
 	</Layout>

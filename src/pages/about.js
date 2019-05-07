@@ -53,7 +53,7 @@ const AboutPage = () => (
 						<a href="https://facebook.com/nfmohit/" target="_blank" rel="noopener noreferrer">
 							<i className="fab fa-facebook-f"></i>
 						</a>
-						<a href="mailto:hello@nfmohit.pro" target="_blank" rel="noopener noreferrer">
+						<a href="mailto:hello@nahid.dev" target="_blank" rel="noopener noreferrer">
 							<i className="far fa-envelope"></i>
 						</a>
 					</div>

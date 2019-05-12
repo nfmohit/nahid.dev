@@ -56,6 +56,7 @@ module.exports = {
 					"**/tags",
 					"**/taxonomies",
 					"**/users",
+					"**/projects",
 				],
 			},
 		},

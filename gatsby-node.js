@@ -107,5 +107,43 @@ exports.createPages = ( {
 			resolve();
 		} );
 
+		/* Projects ( Custom Post Type ) */
+		graphql(
+			`
+			{
+				allWordpressWpProjects {
+					edges {
+						node {
+							id
+					        slug
+					        title
+					        content
+						}
+					}
+				}
+			}
+			`,
+
+		).then( ( result ) => {
+
+			if ( result.errors ) {
+				console.log( result.errors );
+				reject( result.errors );
+			}
+			const postTemplate = path.resolve('./src/templates/project.js');
+
+			_.each( result.data.allWordpressWpProjects.edges, ( edge ) => {
+
+				createPage( {
+					path: `/projects/${ edge.node.slug }`,
+					component: slash( postTemplate ),
+					context: {
+						id: edge.node.id,
+					},
+				} );
+			} );
+			resolve();
+		} );
+
 	} );
 };

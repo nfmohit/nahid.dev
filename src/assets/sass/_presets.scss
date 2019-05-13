@@ -31,17 +31,9 @@ a {
 		background-image: linear-gradient(180deg,transparent 75%,rgba(85, 81, 255, 0.7) 0);
 		outline: none;
 
-		&:before {
-   			content: "<";
-		}
-
-		&:after {
-   			content: ">";
-		}
-
 		&:hover,
 		&:focus {
-			background-image: linear-gradient(180deg,transparent 85%,rgba(85, 81, 255, 1) 0);
+			background-image: linear-gradient(180deg,transparent 50%,rgba(85, 81, 255, 1) 0);
 		}
 	}
 }

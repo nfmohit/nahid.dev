@@ -57,7 +57,6 @@ const Blog = () => (
 										<h3><Link to={ `/blog/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
 										<p dangerouslySetInnerHTML={ { __html: node.excerpt } } />
 										<div className="read-more-date">
-											<Link to={ `/blog/${ node.slug }` }>Read More..</Link>
 											<span className="date">{ node.date }</span>
 										</div>
 									</div>

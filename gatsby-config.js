@@ -44,6 +44,11 @@ module.exports = {
 				protocol: 'https',
 				hostingWPCOM: false,
 				useACF: false,
+				auth: {
+					htaccess_user: process.env.HTACCESS_USER,
+					htaccess_pass: process.env.HTACCESS_PASS,
+					htaccess_sendImmediately: false,
+				},
 				searchAndReplaceContentUrls: {
 					sourceUrl: 'https://' + process.env.SOURCE_SITE,
 					replacementUrl: 'https://nahid.dev',

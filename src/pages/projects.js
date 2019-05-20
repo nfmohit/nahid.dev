@@ -30,20 +30,18 @@ const Projects = () => (
 			<Layout>
 				<div className="container">
 					<div className="row">
-						<div className="blog-grids">
-							{ data.allWordpressWpProjects.edges.map( ( { node } ) => (
-								<div key={ node.slug } className="grid">
-									<div className="entry-body">
-										<span className="cat">{ node.categories && node.categories.map( category => `${ category.name }, `) }</span>
-										<h3><Link to={ `/projects/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
-										<p dangerouslySetInnerHTML={ { __html: node.excerpt } } />
-										<div className="read-more-date">
-											<span className="date">{ node.date }</span>
-										</div>
+						{ data.allWordpressWpProjects.edges.map( ( { node } ) => (
+							<div key={ node.slug } className="grid col-sm-6">
+								<div className="entry-body">
+									<span className="cat">{ node.categories && node.categories.map( category => `${ category.name }, `) }</span>
+									<h3><Link to={ `/projects/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
+									<p dangerouslySetInnerHTML={ { __html: node.excerpt } } />
+									<div className="read-more-date">
+										<span className="date">{ node.date }</span>
 									</div>
 								</div>
-							) ) }
-						</div>
+							</div>
+						) ) }
 					</div>
 				</div>
 			</Layout>)

@@ -79,7 +79,7 @@ const AboutPage = () => (
 			<h4>Education</h4>
 			<p>At the age of 4, Nahid started junior school at <a href="https://en.wikipedia.org/wiki/Milestone_College" className="inline-link" target="_blank" rel="noopener noreferrer">Milestone School and College</a>, from which he graduated the <a href="https://en.wikipedia.org/wiki/Primary_School_Certificate" className="inline-link" target="_blank" rel="noopener noreferrer">Primary School Certificate examination</a> on 2010 and the <a href="https://en.wikipedia.org/wiki/Junior_School_Certificate" className="inline-link" target="_blank" rel="noopener noreferrer">Junior School Certificate examination</a> on 2013. He then got himself admitted in <a href="https://en.wikipedia.org/wiki/RAJUK_Uttara_Model_College" className="inline-link" target="_blank" rel="noopener noreferrer">Rajuk Uttara Model College</a>, where he graduated the <a href="https://en.wikipedia.org/wiki/Secondary_School_Certificate" className="inline-link" target="_blank" rel="noopener noreferrer">Secondary School Certificate examination</a> on 2016. He continued high-school (a.k.a college locally) in the same institution and (surprisingly!) <sup>*</sup>dropped out<sup>*</sup> from the 11<sup>th</sup> class on 2017.</p>
 			<h4>Work</h4>
-			<p>Nahid started his career when he was at the age of 15 as a freelance web developer.</p>
+			<p>Nahid started his career when he was at the age of 15 as a freelance web developer. At initiation, he used to build websites for clients and small businesses.</p>
 		</div>
 
 	</Layout>

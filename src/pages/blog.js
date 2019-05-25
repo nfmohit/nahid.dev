@@ -8,6 +8,7 @@ import { StaticQuery, graphql, Link } from 'gatsby';
  * Project dependencies
  */
 import Layout from '../components/layout';
+import SEO from "../components/seo"
 
 const Blog = () => (
 
@@ -47,6 +48,7 @@ const Blog = () => (
 
 		render={ data => (
 			<Layout>
+				<SEO title="Blog" keywords={ [ `gatsby`, `application`, `react` ] } />
 				<div className="container">
 					<div className="row">
 						<div className="blog-grids">

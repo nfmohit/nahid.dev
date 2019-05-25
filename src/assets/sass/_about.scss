@@ -46,4 +46,32 @@ body.about {
 			}
 		}
 	}
+
+	.about-content {
+
+		.about-index {
+			margin-top: 2.75rem;
+			list-style: none;
+
+			li {
+				line-height: 2;
+				font-size: 1.05em;
+
+				a {
+					color: #fff;
+					text-decoration: none;
+
+					&:hover,
+					&:focus {
+						text-decoration: underline;
+					}
+				}
+
+				> ul {
+					padding-left: 5px;
+					list-style: none;
+				}
+			}
+		}
+	}
 }

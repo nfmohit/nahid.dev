@@ -8,6 +8,7 @@ import { StaticQuery, graphql, Link } from 'gatsby';
  * Project dependencies
  */
 import Layout from '../components/layout';
+import SEO from "../components/seo"
 
 const Projects = () => (
 
@@ -28,6 +29,7 @@ const Projects = () => (
 
 		render={ data => (
 			<Layout>
+				<SEO title="Projects" keywords={ [ `gatsby`, `application`, `react` ] } />
 				<div className="container">
 					<div className="row">
 						{ data.allWordpressWpProjects.edges.map( ( { node } ) => (

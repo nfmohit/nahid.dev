@@ -55,7 +55,7 @@ const Blog = () => (
 							{ data.allWordpressPost.edges.map( ( { node } ) => (
 								<div key={ node.slug } className="grid">
 									<div className="entry-body">
-										<span className="cat">{ node.categories && node.categories.map( category => `${ category.name }, `) }</span>
+										<span className="cat">{ node.categories && node.categories.map( category => `${ category.name } `) }</span>
 										<h3><Link to={ `/blog/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
 										<p dangerouslySetInnerHTML={ { __html: node.excerpt } } />
 										<div className="read-more-date">

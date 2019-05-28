@@ -72,7 +72,7 @@ const AboutPage = () => (
 		</div>
 
 		<div className="row about-content">
-			<div className="col-sm-3">
+			<div className="col-md-3">
 				<ul className="about-index">
 					<li>
 						About Nahid
@@ -86,7 +86,7 @@ const AboutPage = () => (
 					</li>
 				</ul>
 			</div>
-			<div className="col-sm-9 biography">
+			<div className="col-md-9 biography">
 				<h2>About Nahid</h2>
 				<p>Nahid is a 20 years old, self-learned software developer, currently working as a tech support engineer at <a href="https://premium.wpmudev.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WPMU DEV</a>, one of the leading WordPress development companies. Besides his awesome day job, he spends the rest of his leisure time in open source development. <strong>Spoiler alert:</strong> He has a special place in his heart for <sup>*</sup>modern<sup>*</sup> javascript.</p>
 				<h4 id="biography">Biography</h4>

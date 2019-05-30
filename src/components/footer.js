@@ -8,11 +8,11 @@ const Footer = () => (
     <footer>
 		<div className="container">
 			<div className="row">
-				<div className="col-md-8">
+				<div className="col-md-9">
 					© {new Date().getFullYear()} Nahid Ferdous Mohit. <br/>
 					Built with
 					{` `}
-					<a href="https://www.gatsbyjs.org" className="inline-link">Gatsby</a>,
+					<a href="https://www.gatsbyjs.org" className="inline-link">Gatsby</a> ( <a href="https://reactjs.org/" className="inline-link">ReactJS</a> ),
 					proudly powered by
 					{` `}
 					<a href="https://wordpress.org" className="inline-link">WordPress</a>,
@@ -20,7 +20,7 @@ const Footer = () => (
 					{` `}
 					<a href="https://www.netlify.com/" className="inline-link">Netlify</a>.
 				</div>
-				<div className="col-md-4 social-links">
+				<div className="col-md-3 social-links">
 					<a href="https://github.com/nfmohit-wpmudev" target="_blank" rel="noopener noreferrer">
 						<i className="fab fa-github"></i>
 					</a>

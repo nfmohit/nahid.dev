@@ -1,3 +1,21 @@
 /**
  * Header SCSS
  */
+
+header {
+
+	#primary-nav {
+
+		.navbar-toggler {
+		    border: none;
+
+		    span.fa.fa-angle-down {
+		    	transition: 0.3s;
+		    }
+
+		    &[aria-expanded="true"] span.fa.fa-angle-down {
+			    transform: rotate( 180deg );
+			}
+		}
+	}
+}

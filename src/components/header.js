@@ -29,7 +29,7 @@ const Header = ( { siteTitle } ) => (
                     data-target="#mobileNavCollapse"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
-                        <span className="mdi"></span>
+                        <span className="fa fa-angle-down"></span>
                 </button>
 
                 <div

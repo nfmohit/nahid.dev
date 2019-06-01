@@ -31,6 +31,8 @@ const Projects = () => (
 			<Layout>
 				<SEO title="Projects" keywords={ [ `gatsby`, `application`, `react` ] } />
 				<div className="container">
+					<h1>Projects</h1>
+					<h6>Mentionable projects that I've worked on so far</h6>
 					<div className="row">
 						{ data.allWordpressWpProjects.edges.map( ( { node } ) => (
 							<div key={ node.slug } className="grid col-sm-6">

@@ -41,7 +41,7 @@ const AboutPage = () => (
 						<a href="https://profiles.wordpress.org/nfmohit/" target="_blank" rel="noopener noreferrer">
 							<i className="fab fa-wordpress"></i>
 						</a>
-						<a href="https://linked.com/in/nfmohit/" target="_blank" rel="noopener noreferrer">
+						<a href="https://www.linkedin.com/in/nfmohit/" target="_blank" rel="noopener noreferrer">
 							<i className="fab fa-linkedin-in"></i>
 						</a>
 						<a href="https://twitter.com/nfmohit/" target="_blank" rel="noopener noreferrer">

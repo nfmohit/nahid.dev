@@ -3,6 +3,7 @@
 */
 import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby';
+import Helmet from 'react-helmet';
 
 /**
  * Project dependencies
@@ -30,23 +31,21 @@ const Projects = () => (
 		render={ data => (
 			<Layout>
 				<SEO title="Projects" keywords={ [ `gatsby`, `application`, `react` ] } />
-				<div className="container">
-					<h2>Projects</h2>
-					<h6>Mentionable projects that I've worked on so far</h6>
-					<div className="row">
-						{ data.allWordpressWpProjects.edges.map( ( { node } ) => (
-							<div key={ node.slug } className="grid col-sm-6">
-								<div className="entry-body">
-									<span className="cat">{ node.categories && node.categories.map( category => `${ category.name }, `) }</span>
-									<h3><Link to={ `/projects/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
-									<p dangerouslySetInnerHTML={ { __html: node.excerpt } } />
-									<div className="read-more-date">
-										<span className="date">{ node.date }</span>
-									</div>
-								</div>
+				<Helmet
+					bodyAttributes={{
+				        class: 'projects'
+				    }}
+				/>
+				<h2>Projects</h2>
+				<h6>Mentionable projects that I've worked on so far</h6>
+				<div className="row">
+					{ data.allWordpressWpProjects.edges.map( ( { node } ) => (
+						<div key={ node.slug } className="col-sm-6">
+							<div className="project-entry">
+								<h4 className="entry-title"><Link to={ `/projects/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h4>
 							</div>
-						) ) }
-					</div>
+						</div>
+					) ) }
 				</div>
 			</Layout>)
 		}

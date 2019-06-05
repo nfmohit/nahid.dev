@@ -1,0 +1,19 @@
+/**
+ * Projects Page CSS
+ */
+
+body.projects {
+
+	.project-entry {
+		padding: 25px;
+    	border: 1px solid #fff;
+
+		.entry-title {
+			margin-top: 0;
+
+			a {
+				color: #fff;
+			}
+		}
+	}
+}

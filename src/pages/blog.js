@@ -50,8 +50,10 @@ const Blog = () => (
 			<Layout>
 				<SEO title="Blog" keywords={ [ `gatsby`, `application`, `react` ] } />
 				<div className="container">
-					<h2>Blog</h2>
-					<h6>Writings where I share insights and opinions</h6>
+					<div className="page-intro">
+						<h2>Blog</h2>
+						<h6>Writings where I share insights and opinions</h6>
+					</div>	
 					<div className="blog-grids">
 						{ data.allWordpressPost.edges.map( ( { node } ) => (
 							<div key={ node.slug } className="grid">

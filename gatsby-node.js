@@ -118,6 +118,7 @@ exports.createPages = ( {
 					        slug
 					        title
 					        content
+					        excerpt
 						}
 					}
 				}

@@ -22,6 +22,7 @@ const Projects = () => (
 							node {
 								title
 								slug
+								excerpt
 							}
 						}
 					}
@@ -45,7 +46,7 @@ const Projects = () => (
 						<div key={ node.slug } className="col-sm-6">
 							<div className="project-entry">
 								<h3 className="entry-title"><Link to={ `/projects/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
-								<p className="entry-excerpt">Simple introduction to this project which gives the reader an idea of what it is.</p>
+								<span className="entry-excerpt"><p dangerouslySetInnerHTML={ { __html: node.excerpt } } /></span>
 								<div className="project-icons">
 									<a href="https://github.com/nfmohit-wpmudev/nahid.dev" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
 									<a href="https://github.com/nfmohit-wpmudev/nahid.dev" target="_blank" rel="noopener noreferrer"><i className="fab fa-wordpress"></i></a>

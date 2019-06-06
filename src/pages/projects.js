@@ -23,6 +23,11 @@ const Projects = () => (
 								title
 								slug
 								excerpt
+								categories {
+									id
+									name
+									slug
+								}
 							}
 						}
 					}
@@ -48,6 +53,7 @@ const Projects = () => (
 								<h3 className="entry-title"><Link to={ `/projects/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
 								<span className="entry-excerpt"><p dangerouslySetInnerHTML={ { __html: node.excerpt } } /></span>
 								<div className="project-icons">
+									<span className={ node.categories && node.categories.map( category => `category ${ category.slug }`) }>{ node.categories && node.categories.map( category => `${ category.name }`) }</span>
 									<a href="https://github.com/nfmohit-wpmudev/nahid.dev" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
 									<a href="https://github.com/nfmohit-wpmudev/nahid.dev" target="_blank" rel="noopener noreferrer"><i className="fab fa-wordpress"></i></a>
 								</div>

@@ -17,7 +17,7 @@ const Projects = () => (
 		query=
 			{ graphql`
 				query {
-					allWordpressWpProjects(sort: { fields: [date], order:DESC }) {
+					allWordpressWpProject(sort: { fields: [date], order:DESC }) {
 						edges {
 							node {
 								title
@@ -47,10 +47,10 @@ const Projects = () => (
 					<h6>Mentionable projects that I've worked on so far</h6>
 				</div>
 				<div className="row">
-					{ data.allWordpressWpProjects.edges.map( ( { node } ) => (
+					{ data.allWordpressWpProject.edges.map( ( { node } ) => (
 						<div key={ node.slug } className="col-sm-6">
 							<div className="project-entry">
-								<h3 className="entry-title"><Link to={ `/projects/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
+								<h3 className="entry-title"><Link to={ `/project/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
 								<span className="entry-excerpt"><p dangerouslySetInnerHTML={ { __html: node.excerpt } } /></span>
 								<div className="project-icons">
 									<span className={ node.categories && node.categories.map( category => `category ${ category.slug }`) }>{ node.categories && node.categories.map( category => `${ category.name }`) }</span>

@@ -111,7 +111,7 @@ exports.createPages = ( {
 		graphql(
 			`
 			{
-				allWordpressWpProjects {
+				allWordpressWpProject {
 					edges {
 						node {
 							id
@@ -133,10 +133,10 @@ exports.createPages = ( {
 			}
 			const postTemplate = path.resolve('./src/templates/project.js');
 
-			_.each( result.data.allWordpressWpProjects.edges, ( edge ) => {
+			_.each( result.data.allWordpressWpProject.edges, ( edge ) => {
 
 				createPage( {
-					path: `/projects/${ edge.node.slug }`,
+					path: `/project/${ edge.node.slug }`,
 					component: slash( postTemplate ),
 					context: {
 						id: edge.node.id,

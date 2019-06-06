@@ -13,7 +13,7 @@ import Layout from '../components/layout';
 
 const ProjectTemplate = (props) => {
 
-	const { data: { wordpressWpProjects: post } } = props;
+	const { data: { wordpressWpProject: post } } = props;
 
 	return (
 		<Layout>
@@ -49,7 +49,7 @@ export default ProjectTemplate;
 
 export const pageQuery = graphql`
 query($id: String!) {
-	wordpressWpProjects( id: { eq: $id } ) {
+	wordpressWpProject( id: { eq: $id } ) {
 		title
 		content
 		slug

@@ -58,8 +58,20 @@ const Projects = () => (
 								<span className="entry-excerpt"><p dangerouslySetInnerHTML={ { __html: node.excerpt } } /></span>
 								<div className="project-icons">
 									<span className={ node.categories && node.categories.map( category => `category ${ category.slug }`) }>{ node.categories && node.categories.map( category => `${ category.name }`) }</span>
-									<a href={ node.project_custom_fields.project_links_metabox_github_url } target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-									<a href={ node.project_custom_fields.project_links_metabox_wp_org_url } target="_blank" rel="noopener noreferrer"><i className="fab fa-wordpress"></i></a>
+									{ node.project_custom_fields.project_links_metabox_github_url ? 
+										(
+											<a href={ node.project_custom_fields.project_links_metabox_github_url } target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+										) : (
+											``
+										)
+									}
+									{ node.project_custom_fields.project_links_metabox_wp_org_url ? 
+										(
+											<a href={ node.project_custom_fields.project_links_metabox_wp_org_url } target="_blank" rel="noopener noreferrer"><i className="fab fa-wordpress"></i></a>
+										) : (
+											``
+										)
+									}
 								</div>
 							</div>
 						</div>

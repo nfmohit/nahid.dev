@@ -12,13 +12,13 @@ const Footer = () => (
 					© {new Date().getFullYear()} Nahid Ferdous Mohit. <br/>
 					Built with
 					{` `}
-					<a href="https://www.gatsbyjs.org" className="inline-link">Gatsby</a> ( <a href="https://reactjs.org/" className="inline-link">ReactJS</a> ),
+					<a href="https://www.gatsbyjs.org" className="inline-link" target="_blank" rel="noopener noreferrer">Gatsby</a> ( <a href="https://reactjs.org/" className="inline-link">ReactJS</a> ),
 					proudly powered by
 					{` `}
-					<a href="https://wordpress.org" className="inline-link">WordPress</a>,
+					<a href="https://wordpress.org" className="inline-link" target="_blank" rel="noopener noreferrer">WordPress</a>,
 					hosted in
 					{` `}
-					<a href="https://www.netlify.com/" className="inline-link">Netlify</a>.
+					<a href="https://www.netlify.com/" className="inline-link" target="_blank" rel="noopener noreferrer">Netlify</a>.
 				</div>
 				<div className="col-md-3 social-links">
 					<a href="https://github.com/nfmohit-wpmudev" target="_blank" rel="noopener noreferrer">

@@ -52,7 +52,7 @@ const Projects = () => (
 				</div>
 				<div className="row">
 					{ data.allWordpressWpProject.edges.map( ( { node } ) => (
-						<div key={ node.slug } className="col-sm-6">
+						<div key={ node.slug } className="col-sm-6 project-col">
 							<div className="project-entry">
 								<h3 className="entry-title"><Link to={ `/project/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
 								<span className="entry-excerpt"><p dangerouslySetInnerHTML={ { __html: node.excerpt } } /></span>

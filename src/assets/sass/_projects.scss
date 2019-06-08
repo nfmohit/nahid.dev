@@ -4,6 +4,11 @@
 
 body.projects {
 
+	.project-col {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
 	.project-entry {
 		padding: 25px;
     	border: 1px solid $primary-color;

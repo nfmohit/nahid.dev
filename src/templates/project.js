@@ -38,7 +38,8 @@ const ProjectTemplate = (props) => {
 
 					<div className="col-md-9 entry-content">
 						<h2 className="entry-title" dangerouslySetInnerHTML={ { __html: post.title } } />
-						<ul className="nav nav-tabs">
+						<span className={ post.categories && post.categories.map( category => `category ${ category.slug }`) }>{ post.categories && post.categories.map( category => `${ category.name }`) }</span>
+						<ul className="nav nav-tabs project-content-nav">
 							<li className="nav-item">
 								<a className="nav-link active" data-toggle="tab" href="#info">Info</a>
 							</li>

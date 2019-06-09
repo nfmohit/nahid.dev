@@ -55,7 +55,7 @@ const Projects = () => (
 						<div key={ node.slug } className="col-sm-6 project-col">
 							<div className="project-entry">
 								<h3 className="entry-title"><Link to={ `/project/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
-								<span className="entry-excerpt"><p dangerouslySetInnerHTML={ { __html: node.excerpt } } /></span>
+								<span className="entry-excerpt"><div dangerouslySetInnerHTML={ { __html: node.excerpt } } /></span>
 								<div className="project-icons">
 									<span className={ node.categories && node.categories.map( category => `category ${ category.slug }`) }>{ node.categories && node.categories.map( category => `${ category.name }`) }</span>
 									{ node.project_custom_fields.project_links_metabox_github_url ? 

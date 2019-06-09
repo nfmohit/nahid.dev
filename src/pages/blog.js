@@ -60,7 +60,7 @@ const Blog = () => (
 								<div className="entry-body">
 									<span className="cat">{ node.categories && node.categories.map( category => `${ category.name } `) }</span>
 									<h3><Link to={ `/blog/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
-									<p dangerouslySetInnerHTML={ { __html: node.excerpt } } />
+									<div dangerouslySetInnerHTML={ { __html: node.excerpt } } />
 									<div className="read-more-date">
 										<span className="date">{ node.date }</span>
 									</div>

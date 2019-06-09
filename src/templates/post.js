@@ -75,7 +75,7 @@ const PostTemplate = (props) => {
 										</div>
 									</div>
 									<div className="content-body">
-										<p dangerouslySetInnerHTML={ { __html: post.content } } />
+										<div dangerouslySetInnerHTML={ { __html: post.content } } />
 									</div>
 								</div>
 							</div>

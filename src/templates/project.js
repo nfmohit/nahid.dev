@@ -35,7 +35,7 @@ const ProjectTemplate = (props) => {
 
 					<div className="col-md-8">
 						<h1 dangerouslySetInnerHTML={ { __html: post.title } } />
-						<p dangerouslySetInnerHTML={ { __html: post.content } } />
+						<div dangerouslySetInnerHTML={ { __html: post.content } } />
 					</div>
 				</div>
 			</article>

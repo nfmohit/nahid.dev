@@ -29,8 +29,8 @@ const ProjectTemplate = (props) => {
 				<div className="row">
 					<div className="col-md-4">
 						<img className="project-image" src="" alt="" />
-						<a className="btn btn-primary" href={ post.project_custom_fields.project_links_metabox_github_url }><i className="fab fa-github"></i> View on GitHub</a>
-						<a className="btn btn-primary" href={ post.project_custom_fields.project_links_metabox_wporg_url }><i className="fab fa-wordpress"></i> View on WordPress</a>
+						<a className="btn btn-primary" href={ post.project_custom_fields.project_links_metabox_github_url }>View on <i className="fab fa-github"></i> </a>
+						<a className="btn btn-primary" href={ post.project_custom_fields.project_links_metabox_wporg_url }>View on <i className="fab fa-wordpress"></i></a>
 					</div>
 
 					<div className="col-md-8">

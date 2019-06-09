@@ -30,7 +30,7 @@ const AboutPage = () => (
 		<div className="vcard">
 			<div className="row">
 				<div className="col-md-3 avatar">
-					<img src={ avatar } alt="Avatar" />
+					<img src={ avatar } alt="Nahid Ferdous Mohit" />
 				</div>
 				<div className="col-md-5 identity">
 					<h1>Nahid Ferdous Mohit</h1>

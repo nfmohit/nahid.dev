@@ -38,7 +38,21 @@ const ProjectTemplate = (props) => {
 
 					<div className="col-md-9 entry-content">
 						<h2 className="entry-title" dangerouslySetInnerHTML={ { __html: post.title } } />
-						<div dangerouslySetInnerHTML={ { __html: post.content } } />
+						<ul className="nav nav-tabs">
+							<li className="nav-item">
+								<a className="nav-link active" data-toggle="tab" href="#info">Info</a>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link" data-toggle="tab" href="#usage">Usage</a>
+							</li>
+						</ul>
+						<div className="tab-content">
+  							<div className="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+								<div dangerouslySetInnerHTML={ { __html: post.content } } />
+  							</div>
+  							<div className="tab-pane fade show active" id="usage" role="tabpanel" aria-labelledby="usage-tab">
+  							</div>
+						</div>
 					</div>
 				</div>
 			</article>

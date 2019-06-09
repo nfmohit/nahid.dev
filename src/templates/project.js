@@ -51,7 +51,8 @@ const ProjectTemplate = (props) => {
   							<div className="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
 								<div dangerouslySetInnerHTML={ { __html: post.content } } />
   							</div>
-  							<div className="tab-pane fade show active" id="usage" role="tabpanel" aria-labelledby="usage-tab">
+  							<div className="tab-pane fade show" id="usage" role="tabpanel" aria-labelledby="usage-tab">
+								<div dangerouslySetInnerHTML={ { __html: post.project_custom_fields.project_usage_metabox_usage_text } } />
   							</div>
 						</div>
 					</div>
@@ -81,6 +82,7 @@ query($id: String!) {
 		project_custom_fields {
 			project_links_metabox_github_url
 			project_links_metabox_wp_org_url
+			project_usage_metabox_usage_text
 		}
 	}
 }

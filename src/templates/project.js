@@ -34,14 +34,14 @@ const ProjectTemplate = (props) => {
 						<img className="project-image" src="https://placekitten.com/250/250" alt={ post.title } />
 							{ post.project_custom_fields.project_links_metabox_github_url ? 
 								(
-									<a className="github-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_github_url }><i className="fab fa-github"></i> View on GitHub</a>
+									<a className="github-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_github_url } target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> View on GitHub</a>
 								) : (
 									``
 								)
 							}
 							{ post.project_custom_fields.project_links_metabox_wporg_url ? 
 								(
-									<a className="wporg-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_wporg_url }><i className="fab fa-wordpress"></i> View on WordPress</a>
+									<a className="wporg-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_wporg_url } target="_blank" rel="noopener noreferrer"><i className="fab fa-wordpress"></i> View on WordPress</a>
 								) : (
 									``
 								)

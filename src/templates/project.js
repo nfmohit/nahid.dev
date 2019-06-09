@@ -23,18 +23,21 @@ const ProjectTemplate = (props) => {
 				meta={ [
 					{ name: 'description', content: post.excerpt },
 				] }
+				bodyAttributes={{
+			        class: 'single-project'
+			    }}
 			/>
 
 			<article>
 				<div className="row">
-					<div className="col-md-4">
+					<div className="single-project-sidebar col-md-3">
 						<img className="project-image" src="" alt="" />
-						<a className="btn btn-primary" href={ post.project_custom_fields.project_links_metabox_github_url }>View on <i className="fab fa-github"></i> </a>
-						<a className="btn btn-primary" href={ post.project_custom_fields.project_links_metabox_wporg_url }>View on <i className="fab fa-wordpress"></i></a>
+						<a className="github-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_github_url }><i className="fab fa-github"></i> View on GitHub</a>
+						<a className="wporg-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_wporg_url }><i className="fab fa-wordpress"></i> View on WordPress</a>
 					</div>
 
-					<div className="col-md-8">
-						<h1 dangerouslySetInnerHTML={ { __html: post.title } } />
+					<div className="col-md-9 entry-content">
+						<h2 className="entry-title" dangerouslySetInnerHTML={ { __html: post.title } } />
 						<div dangerouslySetInnerHTML={ { __html: post.content } } />
 					</div>
 				</div>

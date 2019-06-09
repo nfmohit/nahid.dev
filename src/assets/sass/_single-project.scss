@@ -1,0 +1,21 @@
+/**
+ * Project Template CSS
+ */
+
+body.single-project {
+
+	.single-project-sidebar {
+
+		.github-link,
+		.wporg-link {
+			display: block;
+		}
+	}
+
+	.entry-content {
+
+		.entry-title {
+			margin-top: 0;
+		}
+	}
+}

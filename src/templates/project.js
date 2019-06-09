@@ -31,7 +31,7 @@ const ProjectTemplate = (props) => {
 			<article>
 				<div className="row">
 					<div className="single-project-sidebar col-md-3">
-						<img className="project-image" src="" alt="" />
+						<img className="project-image" src="https://placekitten.com/250/250" alt={ post.title } />
 						<a className="github-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_github_url }><i className="fab fa-github"></i> View on GitHub</a>
 						<a className="wporg-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_wporg_url }><i className="fab fa-wordpress"></i> View on WordPress</a>
 					</div>

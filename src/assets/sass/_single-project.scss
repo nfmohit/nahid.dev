@@ -6,9 +6,16 @@ body.single-project {
 
 	.single-project-sidebar {
 
+		.project-image {
+			width: 100%;
+			border-radius: 15px;
+			margin-bottom: 20px;
+		}
+
 		.github-link,
 		.wporg-link {
 			display: block;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -16,6 +23,7 @@ body.single-project {
 
 		.entry-title {
 			margin-top: 0;
+			margin-bottom: 1.5em;
 		}
 	}
 }

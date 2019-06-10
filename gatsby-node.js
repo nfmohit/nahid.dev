@@ -10,7 +10,8 @@ const slash = require( 'slash' );
 * Implement the Gatsby API “createPages”
 *
 * Will create pages for Wordpress pages (route : /{slug})
-* Will create pages for Wordpress posts (route : /post/{slug})
+* Will create pages for Wordpress posts (route : /{slug})
+* Will create pages for Wordpress projects (route : /{slug})
 */
 
 exports.createPages = ( {

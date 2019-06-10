@@ -31,6 +31,7 @@ const Projects = () => (
 								project_custom_fields {
 									project_links_metabox_github_url
 									project_links_metabox_wp_org_url
+									project_links_metabox_website_url
 								}
 							}
 						}
@@ -68,6 +69,13 @@ const Projects = () => (
 									{ node.project_custom_fields.project_links_metabox_wp_org_url ? 
 										(
 											<a href={ node.project_custom_fields.project_links_metabox_wp_org_url } target="_blank" rel="noopener noreferrer"><i className="fab fa-wordpress"></i></a>
+										) : (
+											``
+										)
+									}
+									{ node.project_custom_fields.project_links_metabox_website_url ? 
+										(
+											<a href={ node.project_custom_fields.project_links_metabox_website_url } target="_blank" rel="noopener noreferrer"><i className="fas fa-globe"></i></a>
 										) : (
 											``
 										)

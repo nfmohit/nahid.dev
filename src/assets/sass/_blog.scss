@@ -4,7 +4,10 @@
 
 body.blog {
 
-	.entry-body {
+	.post-entry {
+		border: 1px solid $primary-color;
+		margin-bottom: 2.5em;
+		padding: 25px;
 
 		.entry-title {
 			margin-top: 0;
@@ -14,9 +17,56 @@ body.blog {
 			}
 		}
 
-		.entry-excerpt p {
-			font-family: $primary-font;
-			font-size: 1rem;
+		.entry-excerpt {
+			display: block;
+			margin-bottom: 1.5em;
+
+			p {
+				font-family: $primary-font;
+				font-size: 1rem;
+			}
+		}
+
+		span.category {
+		    border-radius: 15px;
+		    text-transform: lowercase;
+		    padding: 5px 15px;
+		    margin-right: 10px;
+		    font-size: 0.9rem;
+
+		    &.react {
+		    	background-color: #61dafb;
+		    	color: #000;
+		    }
+
+		    &.wordpress {
+		    	background-color: #0073aa;
+		    	color: #fff;
+		    }
+
+		    &.php {
+		    	background-color: #8892BF;
+		    	color: #fff;
+		    }
+
+		    &.javascript {
+		    	background-color: #F6DA1C;
+		    	color: #000;
+		    }
+
+		    &.css {
+		    	background-color: #563d7c;
+		    	color: #fff;
+		    }
+
+		    &.personal {
+		    	background-color: #E44E39;
+		    	color: #fff;
+		    }
+		}
+
+		span.date {
+			margin-left: 10px;
 		}
 	}
 }

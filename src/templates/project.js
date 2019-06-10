@@ -46,6 +46,13 @@ const ProjectTemplate = (props) => {
 									``
 								)
 							}
+							{ post.project_custom_fields.project_links_metabox_website_url ? 
+								(
+									<a className="website-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_website_url } target="_blank" rel="noopener noreferrer"><i className="fas fa-globe"></i> Visit Website</a>
+								) : (
+									``
+								)
+							}
 					</div>
 
 					<div className="col-md-9 entry-content">
@@ -94,6 +101,7 @@ query($id: String!) {
 		project_custom_fields {
 			project_links_metabox_github_url
 			project_links_metabox_wp_org_url
+			project_links_metabox_website_url
 			project_usage_metabox_usage_text
 		}
 	}

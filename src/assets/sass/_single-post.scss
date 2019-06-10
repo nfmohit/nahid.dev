@@ -1,3 +1,82 @@
 /**
  * Single Post Template CSS
  */
+
+body.single-post {
+
+	.single-post-entry {
+		margin: 0 auto;
+	}
+
+	.back-link {
+		display: block;
+		color: #fff;
+		margin-bottom: 1em;
+		text-decoration: none;
+		font-size: 1.05em;
+
+		&:hover,
+		&:focus {
+			color: $primary-color;
+		}
+
+		.back-arrow {
+			display: inline-block;
+			font-size: 2em;
+			vertical-align: sub;
+		}
+	}
+
+	.entry-meta {
+		border-bottom: 1px solid $primary-color;
+		padding-bottom: 1.5em;
+		margin-bottom: 3em;
+	}
+
+	span.category {
+	    border-radius: 15px;
+	    text-transform: lowercase;
+	    padding: 5px 15px;
+	    margin-right: 10px;
+	    font-size: 0.9rem;
+
+	    &.react {
+	    	background-color: #61dafb;
+	    	color: #000;
+	    }
+
+	    &.wordpress {
+	    	background-color: #0073aa;
+	    	color: #fff;
+	    }
+
+	    &.php {
+	    	background-color: #8892BF;
+	    	color: #fff;
+	    }
+
+	    &.javascript {
+	    	background-color: #F6DA1C;
+	    	color: #000;
+	    }
+
+	    &.css {
+	    	background-color: #563d7c;
+	    	color: #fff;
+	    }
+
+	    &.personal {
+	    	background-color: #E44E39;
+	    	color: #fff;
+	    }
+	}
+
+	span.date {
+		margin-left: 10px;
+	}
+
+	.entry-content img {
+		max-width: 100%;
+	}
+
+}

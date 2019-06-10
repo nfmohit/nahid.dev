@@ -3,6 +3,7 @@
 */
 import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby';
+import Helmet from 'react-helmet';
 
 /**
  * Project dependencies
@@ -19,7 +20,7 @@ const Blog = () => (
 					allWordpressPost(sort: { fields: [date], order:DESC }) {
 						edges {
 							node {
-								date(formatString: "DD, MMM YYYY")
+								date(formatString: "DD MMM YYYY")
 								title
 								excerpt
 								author{
@@ -49,25 +50,24 @@ const Blog = () => (
 		render={ data => (
 			<Layout>
 				<SEO title="Blog" keywords={ [ `gatsby`, `application`, `react` ] } />
+				<Helmet
+					bodyAttributes={{
+				        class: 'blog'
+				    }}
+				/>
 				<div className="container">
 					<div className="page-intro">
 						<h2>Blog</h2>
 						<h6>Writings where I share insights and opinions</h6>
-					</div>	
-					<div className="blog-grids">
-						{ data.allWordpressPost.edges.map( ( { node } ) => (
-							<div key={ node.slug } className="grid">
-								<div className="entry-body">
-									<span className="cat">{ node.categories && node.categories.map( category => `${ category.name } `) }</span>
-									<h3><Link to={ `/blog/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
-									<div dangerouslySetInnerHTML={ { __html: node.excerpt } } />
-									<div className="read-more-date">
-										<span className="date">{ node.date }</span>
-									</div>
-								</div>
-							</div>
-						) ) }
 					</div>
+					{ data.allWordpressPost.edges.map( ( { node } ) => (
+						<div className="entry-body">
+							<span className={ node.categories && node.categories.map( category => `category ${ category.slug }`) }>{ node.categories && node.categories.map( category => `${ category.name } `) }</span>
+							<h3 className="entry-title"><Link to={ `/blog/${ node.slug }` } dangerouslySetInnerHTML={ { __html: node.title } } /></h3>
+							<span className="entry-excerpt"><div dangerouslySetInnerHTML={ { __html: node.excerpt } } /></span>
+							<span className="date">{ node.date }</span>
+						</div>
+					) ) }
 				</div>
 			</Layout>)
 		}

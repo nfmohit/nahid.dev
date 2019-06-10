@@ -1,0 +1,22 @@
+/**
+ * Blog Page CSS
+ */
+
+body.blog {
+
+	.entry-body {
+
+		.entry-title {
+			margin-top: 0;
+
+			a {
+				color: #fff;
+			}
+		}
+
+		.entry-excerpt p {
+			font-family: $primary-font;
+			font-size: 1rem;
+		}
+	}
+}

@@ -24,6 +24,9 @@ const PostTemplate = (props) => {
 				meta={ [
 					{ name: 'description', content: post.excerpt },
 				] }
+				bodyAttributes={{
+			        class: 'single-post'
+			    }}
 			/>
 
 			<Link to="/blog/">Go Back</Link>

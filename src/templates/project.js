@@ -4,7 +4,7 @@
 import React from 'react';
 import PropType from 'prop-types';
 import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 /**
  * Project dependencies
@@ -29,6 +29,7 @@ const ProjectTemplate = (props) => {
 			/>
 
 			<article>
+				<Link to="/projects/" className="back-link"><span className="back-arrow">&#8592;</span> Browse Projects</Link>
 				<div className="row">
 					<div className="single-project-sidebar col-md-3">
 						<img className="project-image" src="https://placekitten.com/250/250" alt={ post.title } />

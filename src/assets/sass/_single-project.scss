@@ -4,6 +4,25 @@
 
 body.single-project {
 
+	.back-link {
+		display: block;
+		color: #fff;
+		margin-bottom: 1em;
+		text-decoration: none;
+		font-size: 1.05em;
+
+		&:hover,
+		&:focus {
+			color: $primary-color;
+		}
+
+		.back-arrow {
+			display: inline-block;
+			font-size: 2em;
+			vertical-align: sub;
+		}
+	}
+
 	.single-project-sidebar {
 
 		.project-image {

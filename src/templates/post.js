@@ -11,6 +11,11 @@ import { graphql, Link } from 'gatsby';
  */
 import Layout from '../components/layout';
 
+/**
+ * Images
+ */
+import avatar from "./../images/avatar.jpg"
+
 const PostTemplate = (props) => {
 
 	const { data: { wordpressPost: post } } = props;
@@ -41,6 +46,18 @@ const PostTemplate = (props) => {
 						</div>
 
 						<div className="entry-content" dangerouslySetInnerHTML={ { __html: post.content } } />
+
+						<div className="author-vcard">
+							<div className="row">
+								<div className="col-md-4 avatar">
+									<img src={ avatar } alt="Nahid Ferdous Mohit" />
+								</div>
+								<div className="col-md-8 identity">
+									<h3>Nahid Ferdous Mohit</h3>
+									<span className="author-bio-text">Nahid is a 20 years old, self-learned software developer, currently working as a tech support engineer at <a href="https://premium.wpmudev.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WPMU DEV</a>. Besides his awesome day job, he spends the rest of his leisure time in open source development.</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 

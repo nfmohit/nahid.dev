@@ -103,4 +103,23 @@ body.single-post {
 		}
 	}
 
+	.avatar img {
+		border-radius: 50%;
+	}
+
+	.author-vcard {
+		margin: 50px 0;
+		padding: 50px 50px;
+		border-top: 1px solid $primary-color;
+		border-bottom: 1px solid $primary-color;
+
+		> .row {
+			align-items: center;	
+		}
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+
 }

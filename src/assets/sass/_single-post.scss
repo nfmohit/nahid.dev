@@ -79,6 +79,8 @@ body.single-post {
 
 		img {
 			max-width: 100%;
+			width: auto !important;
+    		height: auto !important;
 		}
 
 		a {
@@ -88,6 +90,15 @@ body.single-post {
 			&:hover,
 			&:focus {
 				color: $primary-color;
+			}
+		}
+
+		figure {
+			width: 100% !important;
+
+			img {
+				width: auto !important;
+				height: auto !important;
 			}
 		}
 	}

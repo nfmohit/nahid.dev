@@ -56,7 +56,7 @@ const ProjectTemplate = (props) => {
 							}
 					</div>
 
-					<div className="col-md-9 entry-content">
+					<div className="col-md-9 single-project-entry">
 						<h2 className="entry-title" dangerouslySetInnerHTML={ { __html: post.title } } />
 						<span className={ post.categories && post.categories.map( category => `category ${ category.slug }`) }>{ post.categories && post.categories.map( category => `${ category.name }`) }</span>
 						<ul className="nav nav-tabs project-content-nav">
@@ -69,10 +69,10 @@ const ProjectTemplate = (props) => {
 						</ul>
 						<div className="tab-content">
   							<div className="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
-								<div dangerouslySetInnerHTML={ { __html: post.content } } />
+								<div className="entry-content" dangerouslySetInnerHTML={ { __html: post.content } } />
   							</div>
   							<div className="tab-pane fade show" id="usage" role="tabpanel" aria-labelledby="usage-tab">
-								<div dangerouslySetInnerHTML={ { __html: post.project_custom_fields.project_usage_metabox_usage_text } } />
+								<div className="entry-content" dangerouslySetInnerHTML={ { __html: post.project_custom_fields.project_usage_metabox_usage_text } } />
   							</div>
 						</div>
 					</div>

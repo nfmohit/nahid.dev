@@ -75,8 +75,21 @@ body.single-post {
 		margin-left: 10px;
 	}
 
-	.entry-content img {
-		max-width: 100%;
+	.entry-content {
+
+		img {
+			max-width: 100%;
+		}
+
+		a {
+			color: #fff;
+			text-decoration: underline;
+
+			&:hover,
+			&:focus {
+				color: $primary-color;
+			}
+		}
 	}
 
 }

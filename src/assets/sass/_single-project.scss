@@ -39,7 +39,7 @@ body.single-project {
 		}
 	}
 
-	.entry-content {
+	.single-project-entry {
 
 		.entry-title {
 			margin-top: 0;
@@ -97,6 +97,23 @@ body.single-project {
 				    color: #fff;
 				    border-bottom: 3px solid #5551ff;
     			}
+			}
+		}
+
+		.entry-content {
+
+			img {
+				max-width: 100%;
+			}
+
+			a {
+				color: #fff;
+				text-decoration: underline;
+
+				&:hover,
+				&:focus {
+					color: $primary-color;
+				}
 			}
 		}
 	}

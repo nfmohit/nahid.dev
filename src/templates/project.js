@@ -4,6 +4,7 @@
 import React from 'react';
 import PropType from 'prop-types';
 import Helmet from 'react-helmet';
+import Img from 'gatsby-image';
 import { graphql, Link } from 'gatsby';
 
 /**
@@ -32,7 +33,14 @@ const ProjectTemplate = (props) => {
 				<Link to="/projects/" className="back-link"><span className="back-arrow">&#8592;</span> Go Back</Link>
 				<div className="row">
 					<div className="single-project-sidebar col-md-3">
-						<img className="project-image" src="https://placekitten.com/250/250" alt={ post.title } />
+						{ post.featured_media && (
+							<Img
+								src={ post.featured_media.localFile.childImageSharp.sizes.src }
+								sizes={ post.featured_media.localFile.childImageSharp.sizes }
+								className="project-image"
+								alt={ post.title }
+							/>
+						) }
 							{ post.project_custom_fields.project_links_metabox_github_url ? 
 								(
 									<a className="github-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_github_url } target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> View on GitHub</a>
@@ -104,6 +112,16 @@ query($id: String!) {
 			project_links_metabox_wp_org_url
 			project_links_metabox_website_url
 			project_usage_metabox_usage_text
+		}
+		featured_media {
+			localFile {
+				childImageSharp {
+					id
+					sizes( maxWidth: 800 ) {
+						...GatsbyImageSharpSizes
+					}
+				}
+			}
 		}
 	}
 }

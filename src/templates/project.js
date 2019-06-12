@@ -10,23 +10,27 @@ import { graphql, Link } from 'gatsby';
 /**
  * Project dependencies
  */
-import Layout from '../components/layout';
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const ProjectTemplate = (props) => {
 
 	const { data: { wordpressWpProject: post } } = props;
 
+	const seodesc = post.excerpt.replace(/<[^>]*>?/gm, '');
+
 	return (
 		<Layout>
 
 			<Helmet
-				title={ post.title }
-				meta={ [
-					{ name: 'description', content: post.excerpt },
-				] }
 				bodyAttributes={{
 			        class: 'single-project'
 			    }}
+			/>
+
+			<SEO
+				title={ post.title }
+				description = { seodesc }
 			/>
 
 			<article>
@@ -101,6 +105,7 @@ query($id: String!) {
 	wordpressWpProject( id: { eq: $id } ) {
 		title
 		content
+		excerpt
 		slug
 		categories {
 			id

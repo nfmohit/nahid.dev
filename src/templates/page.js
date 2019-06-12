@@ -4,88 +4,62 @@
 import React from 'react';
 import PropType from 'prop-types';
 import Helmet from 'react-helmet';
-import Img from 'gatsby-image';
 import { graphql, Link } from 'gatsby';
 
 /**
  * Project dependencies
  */
-import Layout from '../components/layout';
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-const PageTemplate = (props) => {
+/**
+ * Images
+ */
+import avatar from "./../images/avatar.jpg"
+
+const PostTemplate = (props) => {
 
 	const { data: { wordpressPage: post } } = props;
+
+	const seodesc = post.excerpt.replace(/<[^>]*>?/gm, '');
 
 	return (
 		<Layout>
 
 			<Helmet
-				title={ post.title }
-				meta={ [
-					{ name: 'description', content: post.excerpt },
-				] }
+				bodyAttributes={{
+			        class: 'single-post'
+			    }}
 			/>
 
-			<Link to="/blog/">Go Back</Link>
+			<SEO
+				title={ post.title }
+				description = { seodesc }
+			/>
 
 			<article>
 
-				<header>
-					<div className="background-bar">
-						{ post.featured_media && (
-							<Img
-								src={ post.featured_media.localFile.childImageSharp.sizes.src }
-								sizes={ post.featured_media.localFile.childImageSharp.sizes }
-								className="img-fluid"
-								alt={ post.title }
-							/>
-						) }
-						<h1 dangerouslySetInnerHTML={ { __html: post.title } } />
-					</div>
-				</header>
+				<div className="row">
+					<div className="single-post-entry col-md-9 col-sm-12">
 
-				<section className="container-fluid main-body">
-					<section className="row">
-						<div className="hidden-xs col-sm-1 col-md-2" />
-							<div className="col-xs-12 col-sm-10 col-md-8">
-								<div className="content-holder">
-									<div className="content-description">
-										<div className="author-avatar">
-											<img alt="" src={ post.author.avatar_urls.wordpress_48 } className="img-circle" />
-										</div>
-										<div className="author-name">
-											<h3>{ post.author.name }</h3>
-										</div>
-										<div className="row blog-info">
-											<div className="col-xs-12 col-sm-6">
-												<span className="lead text-muted">
-													<i className="fa fa-clock-o" />
-													{ ' ' }
-													Published:
-													{ ' ' }
-													{ post.date }
-												</span>
-											</div>
-										</div>
-									</div>
-									<div className="content-body">
-										<div dangerouslySetInnerHTML={ { __html: post.content } } />
-									</div>
-								</div>
-							</div>
-						<div className="hidden-xs col-sm-1 col-md-2" />
-					</section>
-				</section>
+						<div className="entry-meta">
+							<h2 className="entry-title">{ post.title }</h2>
+						</div>
+
+						<div className="entry-content" dangerouslySetInnerHTML={ { __html: post.content } } />
+					</div>
+				</div>
+
 			</article>
 
 		</Layout>
 	);
 };
 
-PageTemplate.propTypes = {
+PostTemplate.propTypes = {
 	data: PropType.shape( {} ).isRequired,
 };
-export default PageTemplate;
+export default PostTemplate;
 
 export const pageQuery = graphql`
 query($id: String!) {
@@ -93,24 +67,6 @@ query($id: String!) {
 		title
 		content
 		excerpt
-		date( formatString: "DD, MMM YYYY" )
-		author {
-			name
-			description
-			avatar_urls {
-				wordpress_48
-			}
-		}
-		featured_media {
-			localFile {
-				childImageSharp {
-					id
-					sizes( maxWidth: 800 ) {
-						...GatsbyImageSharpSizes
-					}
-				}
-			}
-		}
 		slug
 	}
 }

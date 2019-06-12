@@ -6,6 +6,7 @@ import PropType from 'prop-types';
 import Helmet from 'react-helmet';
 import Img from 'gatsby-image';
 import { graphql, Link } from 'gatsby';
+import jQuery from 'jquery';
 
 /**
  * Project dependencies
@@ -17,7 +18,7 @@ const ProjectTemplate = (props) => {
 
 	const { data: { wordpressWpProject: post } } = props;
 
-	const seodesc = post.excerpt.replace(/<[^>]*>?/gm, '');
+	const seodesc = jQuery( post.excerpt ).text();
 
 	return (
 		<Layout>

@@ -4,7 +4,7 @@
 import React from 'react';
 import PropType from 'prop-types';
 import Helmet from 'react-helmet';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import jQuery from 'jquery';
 
 /**
@@ -12,11 +12,6 @@ import jQuery from 'jquery';
  */
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
-/**
- * Images
- */
-import avatar from "./../images/avatar.jpg"
 
 const PostTemplate = (props) => {
 

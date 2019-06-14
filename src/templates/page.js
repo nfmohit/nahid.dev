@@ -24,7 +24,7 @@ const PostTemplate = (props) => {
 
 			<Helmet
 				bodyAttributes={{
-			        class: 'single-post'
+			        class: 'single-post single-page'
 			    }}
 			/>
 

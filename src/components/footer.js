@@ -8,7 +8,7 @@ const Footer = () => (
     <footer>
 		<div className="container">
 			<div className="row">
-				<div className="col-md-9">
+				<div className="col-md-10">
 					© {new Date().getFullYear()} Nahid Ferdous Mohit. <br/>
 					Built with
 					{` `}
@@ -18,9 +18,9 @@ const Footer = () => (
 					<a href="https://wordpress.org" className="inline-link" target="_blank" rel="noopener noreferrer">WordPress</a>,
 					hosted in
 					{` `}
-					<a href="https://www.netlify.com/" className="inline-link" target="_blank" rel="noopener noreferrer">Netlify</a>.
+					<a href="https://www.netlify.com/" className="inline-link" target="_blank" rel="noopener noreferrer">Netlify</a> and <a href="https://premium.wpmudev.org/hosting/" className="inline-link" target="_blank" rel="noopener noreferrer">WPMU DEV</a>.
 				</div>
-				<div className="col-md-3 social-links">
+				<div className="col-md-2 social-links">
 					<a href="https://github.com/nfmohit-wpmudev" target="_blank" rel="noopener noreferrer">
 						<i className="fab fa-github"></i>
 					</a>

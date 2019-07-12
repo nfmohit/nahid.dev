@@ -3,6 +3,7 @@
 */
 import React from "react"
 import Helmet from 'react-helmet';
+import { Link } from "gatsby"
 
 /**
  * Project dependencies
@@ -81,7 +82,8 @@ const AboutPage = () => (
 							<li>&#8627; <a href="#education">Education</a></li>
 							<li>&#8627; <a href="#work">Work</a></li>
 							<li>&#8627; <a href="#oss">Open Source Software</a></li>
-							<li>&#8627; <a href="#more">More</a></li>
+							<li>&#8627; <a href="#community">Community</a></li>
+							<li>&#8627; <a href="#travel">Travel</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -97,8 +99,24 @@ const AboutPage = () => (
 				<p>Nahid started his career when he was at the age of 15 as a freelance web developer. At initiation, he used to build websites for clients and small businesses, using WordPress. Alongside, he started learning how to develop custom WordPress themes himself, making him learn <a href="https://en.wikipedia.org/wiki/PHP" className="inline-link" target="_blank" rel="noopener noreferrer">php</a> and <a href="https://en.wikipedia.org/wiki/JavaScript" className="inline-link" target="_blank" rel="noopener noreferrer">javascript</a> gradually. Besides client work, he used to spend leisure time in learning new tachnologies and applying them. On 21st May 2017, he started working as a <i>"Tech Support Engineer"</i> at <a href="https://premium.wpmudev.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WPMU DEV</a>, one of the largest WordPress development companies and he's working there till date.</p>
 				<h4 id="oss">Open Source Software</h4>
 				<p>At his time out of work, Nahid developes and contributes to open source software. His major works include multiple <a href="https://make.wordpress.org/core/" className="inline-link" target="_blank" rel="noopener noreferrer">WordPress core contributions</a> and mainly, contributions to the <a href="https://reactjs.org/" className="inline-link" target="_blank" rel="noopener noreferrer">reactjs</a> built <a href="https://wordpress.org/gutenberg/" className="inline-link" target="_blank" rel="noopener noreferrer">WordPress Gutenberg project</a>. He is a <a href="https://github.com/orgs/WordPress/people?utf8=%E2%9C%93&query=Nahid+F.+Mohit" className="inline-link" target="_blank" rel="noopener noreferrer">member of the core WordPress Gutenberg project development team</a>, working alongside world-famous developers building software used by millions. Besides, he develops small WordPress plugins as pet projects which are free and open source.</p>
-				<h4 id="more">More</h4>
+				<h4 id="community">Community</h4>
 				<p>Nahid is an active member of the <a href="https://www.meetup.com/Dhaka-WordPress-Meetup/" className="inline-link" target="_blank" rel="noopener noreferrer">Dhaka WordPress Community</a>. He loves <a href="https://central.wordcamp.org/about/" className="inline-link" target="_blank" rel="noopener noreferrer">WordCamp</a>s. So far, he has attended <a href="https://2018.bangkok.wordcamp.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WordCamp Bangkok (2018)</a>, <a href="https://2018.manchester.wordcamp.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WordCamp Manchester (2018)</a> and <a href="https://2019.europe.wordcamp.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WordCamp Europe (2019)</a>. Nahid is also a member of the <a href="https://2019.dhaka.wordcamp.org/organizers/" className="inline-link" target="_blank" rel="noopener noreferrer">organizing team</a> for the upcoming <a href="https://2019.dhaka.wordcamp.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WordCamp Dhaka 2019</a>.</p>
+				<h4 id="travel">Travel</h4>
+				<p>Nahid considers himself a globetrotter.Nahid considers himself a globetrotter. Whenever he gets a chance, he travels to different parts of the world. So far, he has visited:
+					<ol className="country-list">
+						<li>Germany</li>
+						<li>Switzerland</li>
+						<li>United Kingdom</li>
+						<li>Liechtenstein</li>
+						<li>Austria</li>
+						<li>Netherlands</li>
+						<li>Poland</li>
+						<li>Czech Republic</li>
+						<li>Thailand</li>
+						<li>Malaysia</li>
+						<li>India</li>
+				</ol>
+				He writes about his travel experiences in his <Link to="/blog" className="inline-link">blog</Link>.</p>
 			</div>
 		</div>		
 

@@ -1,20 +1,20 @@
 /**
 * Internal dependencies
 */
-import React from "react"
-import Helmet from 'react-helmet';
-import { Link } from "gatsby"
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
 
 /**
  * Project dependencies
  */
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 /**
  * Images
  */
-import avatar from "./../images/avatar.jpg"
+import avatar from './../images/avatar.jpg'
 
 const AboutPage = () => (
 

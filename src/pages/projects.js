@@ -1,14 +1,14 @@
 /**
 * Internal dependencies
 */
-import React from 'react';
-import { StaticQuery, graphql, Link } from 'gatsby';
-import Helmet from 'react-helmet';
+import React from 'react'
+import { StaticQuery, graphql, Link } from 'gatsby'
+import Helmet from 'react-helmet'
 
 /**
  * Project dependencies
  */
-import Layout from '../components/layout';
+import Layout from '../components/layout'
 import SEO from "../components/seo"
 
 const Projects = () => (

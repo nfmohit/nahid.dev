@@ -1,11 +1,11 @@
 /**
 * Internal dependencies
 */
-import React from 'react';
-import PropType from 'prop-types';
-import Helmet from 'react-helmet';
-import { graphql, Link } from 'gatsby';
-import jQuery from 'jquery';
+import React from 'react'
+import PropType from 'prop-types'
+import Helmet from 'react-helmet'
+import { graphql, Link } from 'gatsby'
+import jQuery from 'jquery'
 
 /**
  * Project dependencies
@@ -16,7 +16,7 @@ import SEO from '../components/seo'
 /**
  * Images
  */
-import avatar from "./../images/avatar.jpg"
+import avatar from './../images/avatar.jpg'
 
 const PostTemplate = (props) => {
 

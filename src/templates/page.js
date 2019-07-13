@@ -1,11 +1,11 @@
 /**
 * Internal dependencies
 */
-import React from 'react';
-import PropType from 'prop-types';
-import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
-import jQuery from 'jquery';
+import React from 'react'
+import PropType from 'prop-types'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import jQuery from 'jquery'
 
 /**
  * Project dependencies

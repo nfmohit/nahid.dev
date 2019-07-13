@@ -1,37 +1,24 @@
 /**
- * Single Post Template CSS
+ * Single Post Template SCSS
  */
 
 body.single-post {
+
+	/* Single Post Entry */
 
 	.single-post-entry {
 		margin: 0 auto;
 	}
 
-	.back-link {
-		display: inline-block;
-		color: #fff;
-		margin-bottom: 1em;
-		text-decoration: none;
-		font-size: 1.05em;
-
-		&:hover,
-		&:focus {
-			color: $primary-color;
-		}
-
-		.back-arrow {
-			display: inline-block;
-			font-size: 2em;
-			vertical-align: sub;
-		}
-	}
+	/* Single Post Entry Meta */
 
 	.entry-meta {
 		border-bottom: 1px solid $primary-color;
 		padding-bottom: 1.5em;
 		margin-bottom: 3em;
 	}
+
+	/* Entry Category */
 
 	span.category {
 	    border-radius: 15px;
@@ -71,9 +58,13 @@ body.single-post {
 	    }
 	}
 
+	/* Entry Date */
+
 	span.date {
 		margin-left: 10px;
 	}
+
+	/* Entry Content */
 
 	.entry-content {
 
@@ -103,9 +94,7 @@ body.single-post {
 		}
 	}
 
-	.avatar img {
-		border-radius: 50%;
-	}
+	/* Author Vcard */
 
 	.author-vcard {
 		margin: 50px 0;
@@ -115,6 +104,10 @@ body.single-post {
 
 		> .row {
 			align-items: center;	
+		}
+
+		.avatar img {
+			border-radius: 50%;
 		}
 
 		h3 {

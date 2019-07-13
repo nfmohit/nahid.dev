@@ -1,13 +1,17 @@
 /**
- * Blog Page CSS
+ * Blog Page SCSS
  */
 
 body.blog {
+
+	/* Post Entry */
 
 	.post-entry {
 		border: 1px solid $primary-color;
 		margin-bottom: 2.5em;
 		padding: 25px;
+
+		/* Entry Title */
 
 		.entry-title {
 			margin-top: 0;
@@ -16,6 +20,8 @@ body.blog {
 				color: #fff;
 			}
 		}
+
+		/* Entry Excerpt */
 
 		.entry-excerpt {
 			display: block;
@@ -26,6 +32,8 @@ body.blog {
 				font-size: 1rem;
 			}
 		}
+
+		/* Entry Category */
 
 		span.category {
 		    border-radius: 15px;
@@ -64,6 +72,8 @@ body.blog {
 		    	color: #fff;
 		    }
 		}
+
+		/* Entry Date */
 
 		span.date {
 			margin-left: 10px;

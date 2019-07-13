@@ -1,17 +1,23 @@
 /**
- * Projects Page CSS
+ * Projects Page SCSS
  */
 
 body.projects {
+
+	/* Column styles */
 
 	.project-col {
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
 
+	/* Entries */
+
 	.project-entry {
 		padding: 25px;
     	border: 1px solid $primary-color;
+
+		/* Entry Title */
 
 		.entry-title {
 			margin-top: 0;
@@ -21,6 +27,8 @@ body.projects {
 			}
 		}
 
+		/* Entry Excerpt */
+
 		.entry-excerpt {
 			margin-bottom: 1rem;
 
@@ -29,6 +37,8 @@ body.projects {
 				font-size: 1rem;
 			}
 		}
+
+		/* Project links */
 
 		.project-icons {
 

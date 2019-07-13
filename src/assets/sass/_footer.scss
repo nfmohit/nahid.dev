@@ -1,14 +1,18 @@
 /**
- * Footer CSS
+ * Footer SCSS
  */
 
 footer {
 	margin-top: 50px;
 	padding: 15px 0;
 
+	/* Footer Links */
+
 	a {
 		text-transform: none;
 	}
+
+	/* Footer Specific Social LInks */
 
 	.social-links {
 		display: flex;
@@ -17,13 +21,6 @@ footer {
 
 		a {
 			font-size: 16px;
-		    color: rgba(255, 255, 255, 0.85);
-		    margin-right: 15px;
-
-		    &:hover,
-		    &:focus {
-		    	color: $primary-color;
-		    }
 		}
 
 		@media only screen and ( max-width: 767px ) {

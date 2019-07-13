@@ -1,35 +1,22 @@
 /**
- * Project Template CSS
+ * Single Project Template SCSS
  */
 
 body.single-project {
 
-	.back-link {
-		display: inline-block;
-		color: #fff;
-		margin-bottom: 1em;
-		text-decoration: none;
-		font-size: 1.05em;
-
-		&:hover,
-		&:focus {
-			color: $primary-color;
-		}
-
-		.back-arrow {
-			display: inline-block;
-			font-size: 2em;
-			vertical-align: sub;
-		}
-	}
+	/* Entry Sidebar */
 
 	.single-project-sidebar {
+
+		/* Project Image */
 
 		.project-image {
 			width: 100%;
 			border-radius: 15px;
 			margin-bottom: 20px;
 		}
+
+		/* Project Links */
 
 		.github-link,
 		.wporg-link,
@@ -39,12 +26,18 @@ body.single-project {
 		}
 	}
 
+	/* Project Details */
+
 	.single-project-entry {
+
+		/* Project Title */
 
 		.entry-title {
 			margin-top: 0;
 			margin-bottom: 10px;
 		}
+
+		/* Project Categories */
 
 		span.category {
 		    border-radius: 15px;
@@ -79,6 +72,8 @@ body.single-project {
 		    }
 		}
 
+		/* Project Nav Tabs */
+
 		.project-content-nav {
 			margin-top: 2.5em;
 			margin-bottom: 1.5em;
@@ -99,6 +94,8 @@ body.single-project {
     			}
 			}
 		}
+
+		/* Project Content */
 
 		.entry-content {
 

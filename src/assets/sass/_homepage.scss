@@ -4,30 +4,33 @@
 
 /* Center the homepage content */
 
-body.home main {
-    display: flex;
-    align-items: center;
+body.home {
 
-    @media only screen and ( min-height: 650px ) {
-		height: calc(100vh - 234px);
-    }
-}
+	main {
+		display: flex;
+		align-items: center;
 
-body.home .name {
-	margin-bottom: 30px;
-
-	span {
-		margin-bottom: 0;
-		color: rgba(255, 255, 255, 0.7);
+		@media only screen and ( min-height: 650px ) {
+			height: calc(100vh - 234px);
+		}
 	}
-}
 
-body.home .tldr {
-	line-height: 26px;
-	margin-bottom: 30px;
-}
+	.name {
+		margin-bottom: 30px;
+	
+		span {
+			margin-bottom: 0;
+			color: rgba(255, 255, 255, 0.7);
+		}
+	}
 
-body.home .tldr ul {
-	list-style: none;
-	margin-left: 30px;
+	.tldr {
+		line-height: 26px;
+		margin-bottom: 30px;
+
+		ul {
+			list-style: none;
+			margin-left: 30px;
+		}
+	}
 }

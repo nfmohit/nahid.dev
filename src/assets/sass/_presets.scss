@@ -46,6 +46,48 @@ a {
 	}
 }
 
+/*
+ * General
+ */
+
+/* Page Intro */
+
 .page-intro {
 	margin-bottom: 50px;
+}
+
+/* Social Icons */
+
+.social-links {
+
+	a {
+		color: rgba(255, 255, 255, 0.85);
+		margin-right: 15px;
+
+		&:hover,
+		&:focus {
+			color: $primary-color;
+		}
+	}
+}
+
+/* Single Entry Go Back Link */
+
+.back-link {
+	display: inline-block;
+	color: #fff;
+	margin-bottom: 1em;
+	text-decoration: none;
+	font-size: 1.05em;
+
+	&:hover,
+	&:focus {
+		color: $primary-color;
+	}
+
+	.back-arrow {
+		display: inline-block;
+		font-size: 2em;
+		vertical-align: sub;
+	}
 }

@@ -5,7 +5,6 @@ import React from 'react'
 import PropType from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
-import jQuery from 'jquery'
 
 /**
  * Project dependencies
@@ -22,7 +21,7 @@ const PostTemplate = (props) => {
 
 	const { data: { wordpressPost: post } } = props;
 
-	const seodesc = jQuery( post.excerpt ).text();
+	const seodesc = post.excerpt.replace( /<[^>]+>/g, '' );
 
 	return (
 		<Layout>

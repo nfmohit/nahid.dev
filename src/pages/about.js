@@ -102,7 +102,7 @@ const AboutPage = () => (
 				<h4 id="community">Community</h4>
 				<p>Nahid is an active member of the <a href="https://www.meetup.com/Dhaka-WordPress-Meetup/" className="inline-link" target="_blank" rel="noopener noreferrer">Dhaka WordPress Community</a>. He loves <a href="https://central.wordcamp.org/about/" className="inline-link" target="_blank" rel="noopener noreferrer">WordCamp</a>s. So far, he has attended <a href="https://2018.bangkok.wordcamp.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WordCamp Bangkok (2018)</a>, <a href="https://2018.manchester.wordcamp.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WordCamp Manchester (2018)</a> and <a href="https://2019.europe.wordcamp.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WordCamp Europe (2019)</a>. Nahid is also a member of the <a href="https://2019.dhaka.wordcamp.org/organizers/" className="inline-link" target="_blank" rel="noopener noreferrer">organizing team</a> for the upcoming <a href="https://2019.dhaka.wordcamp.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WordCamp Dhaka 2019</a>.</p>
 				<h4 id="travel">Travel</h4>
-				<p>Nahid considers himself a globetrotter.Nahid considers himself a globetrotter. Whenever he gets a chance, he travels to different parts of the world. So far, he has visited:
+				<p>Nahid considers himself a globetrotter. Whenever he gets a chance, he travels to different parts of the world. So far, he has visited:
 					<ol className="country-list">
 						<li>Germany</li>
 						<li>Switzerland</li>

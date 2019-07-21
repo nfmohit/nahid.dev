@@ -6,6 +6,7 @@ require( 'dotenv' ).config( {
 module.exports = {
 
 	siteMetadata: {
+		siteUrl: `https://nahid.dev`,
 		title: `Nahid Ferdous Mohit`,
 		description: `WordPress Sorcerer & Web Interface Developer`,
 		author: `@nfmohit`,
@@ -73,5 +74,6 @@ module.exports = {
 				head: false,
 			},
 		},
+		`gatsby-plugin-sitemap`,
 	],
 }

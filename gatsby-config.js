@@ -8,7 +8,7 @@ module.exports = {
 	siteMetadata: {
 		siteUrl: `https://nahid.dev`,
 		title: `Nahid Ferdous Mohit`,
-		description: `WordPress Sorcerer & Web Interface Developer`,
+		description: `20 Years Old Self-Taught Software Developer`,
 		author: `@nfmohit`,
 	},
 

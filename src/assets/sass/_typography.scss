@@ -2,6 +2,26 @@
  * Typography SCSS
  */
 
+/* Importing Fonts */
+
+@font-face {
+	font-family: "Menlo";
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: url( "../fonts/menlo.woff" ) format("woff");
+}
+
+@font-face {
+	font-family: "Avenir";
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: url( "../fonts/avenir.woff" ) format("woff");
+}
+
+/* Typography Styles */
+
 html {
 	font-size: 16px;
 }

@@ -52,9 +52,9 @@ const ProjectTemplate = (props) => {
 									``
 								)
 							}
-							{ post.project_custom_fields.project_links_metabox_wporg_url ? 
+							{ post.project_custom_fields.project_links_metabox_wp_org_url ? 
 								(
-									<a className="wporg-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_wporg_url } target="_blank" rel="noopener noreferrer"><i className="fab fa-wordpress"></i> View on WordPress</a>
+									<a className="wporg-link btn btn-primary" href={ post.project_custom_fields.project_links_metabox_wp_org_url } target="_blank" rel="noopener noreferrer"><i className="fab fa-wordpress"></i> View on WordPress</a>
 								) : (
 									``
 								)

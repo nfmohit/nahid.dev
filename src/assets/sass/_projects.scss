@@ -15,70 +15,78 @@ body.projects {
 
 	.project-entry {
 		padding: 25px;
-    	border: 1px solid $primary-color;
+		border: 1px solid $primary-color;
+		height: 100%;
+		position: relative;
 
-		/* Entry Title */
+		.project-entry-content {
+			position: relative;
+			top: 50%;
+			transform: translate( 0, -50% );
 
-		.entry-title {
-			margin-top: 0;
+			/* Entry Title */
 
-			a {
-				color: #fff;
-			}
-		}
+			.entry-title {
+				margin-top: 0;
 
-		/* Entry Excerpt */
-
-		.entry-excerpt {
-			margin-bottom: 1rem;
-
-			p {
-				font-family: Menlo, sans-serif;
-				font-size: 1rem;
-			}
-		}
-
-		/* Project links */
-
-		.project-icons {
-
-			span.category {
-			    border-radius: 15px;
-			    text-transform: lowercase;
-			    padding: 5px 15px;
-			    margin-right: 10px;
-			    font-size: 0.9rem;
-
-			    &.react {
-			    	background-color: #61dafb;
-			    	color: #000;
-			    }
-
-			    &.wordpress {
-			    	background-color: #0073aa;
-			    	color: #fff;
-			    }
-
-			    &.php {
-			    	background-color: #8892BF;
-			    	color: #fff;
-			    }
-
-			    &.javascript {
-			    	background-color: #F6DA1C;
-			    	color: #000;
-			    }
-
-			    &.css {
-			    	background-color: #563d7c;
-			    	color: #fff;
-			    }
+				a {
+					color: #fff;
+				}
 			}
 
-			a {
-				color: #fff;
-				margin-right: 0.5rem;
-				font-size: 1.1rem;
+			/* Entry Excerpt */
+
+			.entry-excerpt {
+				margin-bottom: 1rem;
+
+				p {
+					font-family: Menlo, sans-serif;
+					font-size: 1rem;
+				}
+			}
+
+			/* Project links */
+
+			.project-icons {
+
+				span.category {
+					border-radius: 15px;
+					text-transform: lowercase;
+					padding: 5px 15px;
+					margin-right: 10px;
+					font-size: 0.9rem;
+
+					&.react {
+						background-color: #61dafb;
+						color: #000;
+					}
+
+					&.wordpress {
+						background-color: #0073aa;
+						color: #fff;
+					}
+
+					&.php {
+						background-color: #8892BF;
+						color: #fff;
+					}
+
+					&.javascript {
+						background-color: #F6DA1C;
+						color: #000;
+					}
+
+					&.css {
+						background-color: #563d7c;
+						color: #fff;
+					}
+				}
+
+				a {
+					color: #fff;
+					margin-right: 0.5rem;
+					font-size: 1.1rem;
+				}
 			}
 		}
 	}

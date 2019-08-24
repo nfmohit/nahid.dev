@@ -2,6 +2,7 @@
 * Internal dependencies
 */
 import React from 'react'
+import { Link } from 'gatsby'
 
 const Footer = () => (
 
@@ -9,7 +10,7 @@ const Footer = () => (
 		<div className="container">
 			<div className="row">
 				<div className="col-md-10">
-					© {new Date().getFullYear()} Nahid Ferdous Mohit. All Rights Reserved.
+					© {new Date().getFullYear()} Nahid Ferdous Mohit. <Link to="/project/nahid-dev/">About this website</Link>.
 				</div>
 				<div className="col-md-2 social-links">
 					<a href="https://github.com/nfmohit-wpmudev" target="_blank" rel="noopener noreferrer">

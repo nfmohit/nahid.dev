@@ -104,17 +104,27 @@ const AboutPage = () => (
 				<h4 id="travel">Travel</h4>
 				<p>Nahid considers himself a globetrotter. Whenever he gets a chance, he travels to different parts of the world. So far, he has visited:
 					<ol className="country-list">
-						<li>Germany</li>
-						<li>Switzerland</li>
-						<li>United Kingdom</li>
-						<li>Liechtenstein</li>
-						<li>Austria</li>
-						<li>Netherlands</li>
-						<li>Poland</li>
-						<li>Czech Republic</li>
-						<li>Thailand</li>
-						<li>Malaysia</li>
-						<li>India</li>
+						<li>Berlin, Germany</li>
+						<li>Zürich, Switzerland</li>
+						<li>Sargans, St. Gallen, Switzerland</li>
+						<li>Conisbrough, Doncaster, South Yorkshire, United Kingdom</li>
+						<li>Leeds, United Kingdom</li>
+						<li>London, United Kingdom</li>
+						<li>Manchester, United Kingdom</li>
+						<li>Vaduz, Liechtenstein</li>
+						<li>Feldkirch, Voralberg, Austria</li>
+						<li>Amsterdam, Netherlands</li>
+						<li>Lublin, Poland</li>
+						<li>Prague, Czech Republic</li>
+						<li>Bangkok, Thailand</li>
+						<li>Phuket, Thailand</li>
+						<li>Kuala Lumpur, Malaysia</li>
+						<li>Genting Highlands, Pahang, Malaysia</li>
+						<li>Putrajaya, Malaysia</li>
+						<li>Beijing, China</li>
+						<li>Yiwu, China</li>
+						<li>Darjeeling, India</li>
+						<li>Kolkata, India</li>
 				</ol>
 				He writes about his travel experiences in his <Link to="/blog" className="inline-link">blog</Link>.</p>
 			</div>

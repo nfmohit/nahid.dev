@@ -58,7 +58,7 @@ const PostTemplate = (props) => {
 								</div>
 								<div className="col-md-8 identity">
 									<h3>Nahid Ferdous Mohit</h3>
-									<span className="author-bio-text">Nahid is a 20 years old, self-learned software developer, currently working as a tech support engineer at <a href="https://premium.wpmudev.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WPMU DEV</a>. Besides his awesome day job, he spends the rest of his leisure time in open source development.</span>
+									<span className="author-bio-text">Nahid is a 20 years old, self-taught software developer, currently working as a tech support engineer at <a href="https://premium.wpmudev.org/" className="inline-link" target="_blank" rel="noopener noreferrer">WPMU DEV</a>. Besides his awesome day job, he spends the rest of his leisure time in open source development.</span>
 								</div>
 							</div>
 						</div>

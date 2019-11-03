@@ -115,6 +115,7 @@ const AboutPage = () => (
 						<li>Feldkirch, Voralberg, Austria</li>
 						<li>Amsterdam, Netherlands</li>
 						<li>Lublin, Poland</li>
+						<li>Warsaw, Poland</li>
 						<li>Prague, Czech Republic</li>
 						<li>Bangkok, Thailand</li>
 						<li>Phuket, Thailand</li>
@@ -124,6 +125,7 @@ const AboutPage = () => (
 						<li>Beijing, China</li>
 						<li>Yiwu, China</li>
 						<li>Darjeeling, India</li>
+						<li>Guangzhou, India</li>
 						<li>Kolkata, India</li>
 				</ol>
 				He writes about his travel experiences in his <Link to="/blog" className="inline-link">blog</Link>.</p>

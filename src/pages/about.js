@@ -124,8 +124,8 @@ const AboutPage = () => (
 						<li>Putrajaya, Malaysia</li>
 						<li>Beijing, China</li>
 						<li>Yiwu, China</li>
+						<li>Guangzhou, China</li>
 						<li>Darjeeling, India</li>
-						<li>Guangzhou, India</li>
 						<li>Kolkata, India</li>
 				</ol>
 				He writes about his travel experiences in his <Link to="/blog" className="inline-link">blog</Link>.</p>

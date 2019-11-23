@@ -119,7 +119,8 @@ exports.createPages = ( {
 					        slug
 					        title
 					        content
-					        excerpt
+							excerpt
+							menu_order
 						}
 					}
 				}

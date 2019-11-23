@@ -17,7 +17,7 @@ const Projects = () => (
 		query=
 			{ graphql`
 				query {
-					allWordpressWpProject(sort: { fields: [date], order:DESC }) {
+					allWordpressWpProject(sort: { fields: [menu_order], order:ASC }) {
 						edges {
 							node {
 								title

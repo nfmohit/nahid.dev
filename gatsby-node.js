@@ -133,13 +133,13 @@ exports.createPages = ( {
 				console.log( result.errors );
 				reject( result.errors );
 			}
-			const postTemplate = path.resolve('./src/templates/project.js');
+			const projectTemplate = path.resolve('./src/templates/project.js');
 
 			_.each( result.data.allWordpressWpProject.edges, ( edge ) => {
 
 				createPage( {
 					path: `/project/${ edge.node.slug }`,
-					component: slash( postTemplate ),
+					component: slash( projectTemplate ),
 					context: {
 						id: edge.node.id,
 					},

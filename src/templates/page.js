@@ -12,7 +12,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const PostTemplate = (props) => {
+const PageTemplate = (props) => {
 
 	const { data: { wordpressPage: post } } = props;
 
@@ -51,10 +51,10 @@ const PostTemplate = (props) => {
 	);
 };
 
-PostTemplate.propTypes = {
+PageTemplate.propTypes = {
 	data: PropType.shape( {} ).isRequired,
 };
-export default PostTemplate;
+export default PageTemplate;
 
 export const pageQuery = graphql`
 query($id: String!) {

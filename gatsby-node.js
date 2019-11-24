@@ -38,7 +38,7 @@ exports.createPages = ( {
 					        content
 					        excerpt
 					        date
-					        modified
+							modified
 						}
 					}
 				}
@@ -93,13 +93,13 @@ exports.createPages = ( {
 				console.log( result.errors );
 				reject( result.errors );
 			}
-			const postTemplate = path.resolve('./src/templates/page.js');
+			const pageTemplate = path.resolve('./src/templates/page.js');
 
 			_.each( result.data.allWordpressPage.edges, ( edge ) => {
 
 				createPage( {
 					path: edge.node.slug,
-					component: slash( postTemplate ),
+					component: slash( pageTemplate ),
 					context: {
 						id: edge.node.id,
 					},

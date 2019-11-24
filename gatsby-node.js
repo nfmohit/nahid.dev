@@ -39,6 +39,7 @@ exports.createPages = ( {
 					        excerpt
 					        date
 							modified
+							wordpress_id
 						}
 					}
 				}
@@ -60,6 +61,7 @@ exports.createPages = ( {
 					component: slash( postTemplate ),
 					context: {
 						id: edge.node.id,
+						postId: edge.node.wordpress_id,
 					},
 				} );
 			} );

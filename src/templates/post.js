@@ -11,15 +11,18 @@ import { graphql, Link } from 'gatsby'
  */
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import CommentsList from '../components/comments-list'
 
 /**
  * Images
  */
 import avatar from './../images/avatar.jpg'
 
-const PostTemplate = (props) => {
+const PostTemplate = ( props ) => {
 
-	const { data: { wordpressPost: post } } = props;
+	const { data: { wordpressPost: post, allWordpressWpComments: { edges } } } = props;
+
+	const comments = edges.map( ( { node } ) => node );
 
 	const seodesc = post.excerpt.replace( /<[^>]+>/g, '' );
 
@@ -62,6 +65,7 @@ const PostTemplate = (props) => {
 								</div>
 							</div>
 						</div>
+						<CommentsList comments={ comments } />
 					</div>
 				</div>
 
@@ -77,8 +81,10 @@ PostTemplate.propTypes = {
 export default PostTemplate;
 
 export const pageQuery = graphql`
-query($id: String!) {
+query( $id: String!, $postId: Int! ) {
 	wordpressPost( id: { eq: $id } ) {
+		id
+		wordpress_id
 		title
 		content
 		excerpt
@@ -89,6 +95,16 @@ query($id: String!) {
 			slug
 		}
 		slug
+	}
+	allWordpressWpComments( filter: { post: { eq: $postId } } ) {
+		edges {
+			node {
+				id
+				wordpress_id
+				author_name
+				content
+			}
+		}
 	}
 }
 `;

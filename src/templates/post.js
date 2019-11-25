@@ -103,6 +103,10 @@ query( $id: String!, $postId: Int! ) {
 				wordpress_id
 				author_name
 				content
+				wordpress_parent
+				author_avatar_urls {
+					wordpress_48
+				}
 			}
 		}
 	}

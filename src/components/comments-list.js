@@ -10,7 +10,7 @@ const CommentsList = ( { comments } ) => (
 			.map( comment => {
 				const child_comment = comments.find( c => comment.wordpress_id === c.wordpress_parent )
 				return (
-					<div key={ comment.id }>
+					<div key={ comment.id } className="comment-container">
 						<div className="comment">
 							<div className="author">
 								<img

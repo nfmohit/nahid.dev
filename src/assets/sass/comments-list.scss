@@ -1,0 +1,16 @@
+/**
+ * Comments list SCSS
+ */
+
+.comments-list {
+
+    .comment-container {
+
+        .comment {
+
+            &.reply {
+                padding-left: 30px;
+            }
+        }
+    }
+}

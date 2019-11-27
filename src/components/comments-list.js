@@ -18,9 +18,12 @@ const CommentsList = ( { comments } ) => (
 									alt={ comment.author_name }
 									className="author-avatar"
 								/>
-								<span className="author-name">{ comment.author_name }</span>
+								<div className="comment-meta">
+									<div className="author-name">{ comment.author_name }</div>
+									<div className="comment-date">{ comment.date }</div>
+								</div>
 							</div>
-							<div dangerouslySetInnerHTML={ { __html: comment.content } } />
+							<div className="comment-content" dangerouslySetInnerHTML={ { __html: comment.content } } />
 						</div>
 						{ child_comment && (
 							<div className="comment reply">
@@ -30,9 +33,12 @@ const CommentsList = ( { comments } ) => (
 										alt={ child_comment.author_name }
 										className="author-avatar"
 									/>
-									<span className="author-name">{ child_comment.author_name }</span>
+									<div className="comment-meta">
+										<div className="author-name">{ child_comment.author_name }</div>
+										<div className="comment-date">{ child_comment.date }</div>
+									</div>
 								</div>
-								<div dangerouslySetInnerHTML={ { __html: child_comment.content } } />
+								<div className="comment-content" dangerouslySetInnerHTML={ { __html: child_comment.content } } />
 							</div>
 						) }
 					</div>

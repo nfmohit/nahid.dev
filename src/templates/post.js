@@ -65,7 +65,10 @@ const PostTemplate = ( props ) => {
 								</div>
 							</div>
 						</div>
-						<CommentsList comments={ comments } />
+						<div className="comments-section">
+							<h2>Comments</h2>
+							<CommentsList comments={ comments } />
+						</div>
 					</div>
 				</div>
 
@@ -107,6 +110,7 @@ query( $id: String!, $postId: Int! ) {
 				author_avatar_urls {
 					wordpress_48
 				}
+				date( formatString: "Do MMM YYYY" )
 			}
 		}
 	}

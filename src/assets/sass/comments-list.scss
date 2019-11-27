@@ -7,9 +7,29 @@
     .comment-container {
 
         .comment {
+            margin-bottom: 50px;
 
             &.reply {
-                padding-left: 30px;
+                padding-left: 50px;
+            }
+
+            .author {
+                margin-bottom: 25px;
+
+                .author-avatar {
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+
+                .comment-meta {
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    .comment-date {
+                        font-size: 13px;
+                    }
+                }
             }
         }
     }

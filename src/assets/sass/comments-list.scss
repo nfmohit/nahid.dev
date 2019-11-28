@@ -4,30 +4,33 @@
 
 .comments-list {
 
-    .comment-container {
+    .comments-container {
 
-        .comment {
+        .comment-container {
             margin-bottom: 50px;
 
-            &.reply {
-                padding-left: 50px;
-            }
+            .comment {
 
-            .author {
-                margin-bottom: 25px;
-
-                .author-avatar {
-                    border-radius: 50%;
-                    margin-right: 10px;
-                    vertical-align: middle;
+                &.reply {
+                    padding-left: 50px;
                 }
 
-                .comment-meta {
-                    display: inline-block;
-                    vertical-align: middle;
+                .author {
+                    margin-bottom: 25px;
 
-                    .comment-date {
-                        font-size: 13px;
+                    .author-avatar {
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        vertical-align: middle;
+                    }
+
+                    .comment-meta {
+                        display: inline-block;
+                        vertical-align: middle;
+
+                        .comment-date {
+                            font-size: 13px;
+                        }
                     }
                 }
             }

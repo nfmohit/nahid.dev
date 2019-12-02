@@ -57,6 +57,8 @@ body.about {
 		.about-index {
 			margin-top: 2.75rem;
 			list-style: none;
+			position: sticky;
+    		top: 15px;
 
 			li {
 				line-height: 2;

@@ -1,1 +1,68 @@
 /// Global stylesheet
+
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: url( ../assets/fonts/source-code-pro-regular.ttf );
+}
+
+@font-face {
+	font-family: 'Source Code Pro';
+	font-weight: 700;
+	src: url( ../assets/fonts/source-code-pro-semi-bold.ttf );
+}
+
+@font-face {
+	font-family: 'Source Code Pro';
+	font-weight: 900;
+	src: url( ../assets/fonts/source-code-pro-bold.ttf );
+}
+
+body {
+	background-color: $dark-bg-color;
+	color: $text-color;
+	font-family: $font;
+	font-size: $base-text-size;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+a {
+	color: $theme-color;
+	position: relative;
+	text-decoration: none;
+
+	&:hover::before,
+	&:focus::before {
+		border-color: inherit;
+		border-top: 1px solid;
+		content: '';
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 65%;
+	}
+}

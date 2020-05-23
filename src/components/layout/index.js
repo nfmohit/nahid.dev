@@ -1,17 +1,24 @@
+/*
+ * External dependencies
+ */
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
+
+/*
+ * Internal dependencies
+ */
+import Header from '../header';
+import '../../base-styles/base-styles.scss';
+
 /**
+ * Layout component
+ *
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
-
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
-
-import Header from '../header';
-import '../../base-styles/base-styles.scss';
-
 const Layout = ( { children } ) => {
 	const data = useStaticQuery( graphql`
 		query SiteTitleQuery {

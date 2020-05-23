@@ -1,15 +1,19 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
+/*
+ * External dependencies
  */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+/**
+ * SEO component
+ *
+ * SEO component that queries for data with
+ * Gatsby's useStaticQuery React hook
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
 function SEO( { description, lang, meta, title } ) {
 	const { site } = useStaticQuery(
 		graphql`

@@ -1,7 +1,16 @@
+/*
+ * External dependencies
+ */
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+/**
+ * Header component
+ * Displays the header of the application
+ *
+ * @param {string} siteTitle Title of the site
+ */
 const Header = ( { siteTitle } ) => (
 	<header
 		style={ {

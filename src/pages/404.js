@@ -1,8 +1,19 @@
+/*
+ * External dependencies
+ */
 import React from 'react';
 
+/*
+ * Internal dependencies
+ */
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+/**
+ * NotFoundPage (component|page)
+ *
+ * Component to display the 404 page
+ */
 const NotFoundPage = () => (
 	<Layout>
 		<SEO title="404: Not found" />

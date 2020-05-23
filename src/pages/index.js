@@ -1,10 +1,21 @@
+/*
+ * External dependencies
+ */
 import React from 'react';
 import { Link } from 'gatsby';
 
+/*
+ * Internal dependencies
+ */
 import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
 
+/**
+ * IndexPage (component|page)
+ *
+ * Component to display the index page
+ */
 const IndexPage = () => (
 	<Layout>
 		<SEO title="Home" />
